@@ -13,7 +13,7 @@ export function Hero() {
     const cursor = cursorRef.current
     if (!title || !cursor) return
 
-    const text = 'Transformamos procesos manuales en sistemas inteligentes 24/7'
+    const text = 'Elevamos tu negocio con automatización inteligente'
 
     // Clear title and prepare cursor
     const textSpan = title.querySelector('.typing-text') as HTMLSpanElement
@@ -28,7 +28,7 @@ export function Hero() {
       if (i < text.length && textSpan) {
         textSpan.textContent += text.charAt(i)
         i++
-        timerId = setTimeout(typeWriter, 45)
+        timerId = setTimeout(typeWriter, 50)
       }
     }
 
@@ -56,7 +56,7 @@ export function Hero() {
         </div>
 
         <h1 ref={titleRef} className="text-5xl md:text-7xl font-bold text-white leading-tight text-balance">
-          <span className="typing-text">Elevamos tu negocio con automatización inteligente</span>
+          <span className="typing-text"></span>
           <span ref={cursorRef} className="typing-cursor"></span>
         </h1>
 
@@ -66,7 +66,16 @@ export function Hero() {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
-          <Button size="lg" className="bg-[#EFEEE9] text-black hover:bg-[#E8E2CF] text-lg px-8 py-6 rounded-xl group">
+          <Button 
+            size="lg" 
+            className="bg-[#EFEEE9] text-black hover:bg-[#E8E2CF] text-lg px-8 py-6 rounded-xl group"
+            onClick={() => {
+              document.getElementById('contacto')?.scrollIntoView({ 
+                behavior: 'smooth',
+                block: 'start'
+              })
+            }}
+          >
             Contactanos
             <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
           </Button>

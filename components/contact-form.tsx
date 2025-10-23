@@ -65,7 +65,7 @@ export function ContactForm() {
   }
 
   return (
-    <section className="py-24 px-4 relative overflow-hidden">
+    <section id="contacto" className="py-24 px-4 relative overflow-hidden">
       {/* Gradient orb */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-br from-[#E8E2CF]/20 via-[#EFEEE9]/10 to-transparent rounded-full blur-3xl pointer-events-none" />
 
