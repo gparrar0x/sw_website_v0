@@ -56,7 +56,7 @@ export function Hero() {
         </div>
 
         <h1 ref={titleRef} className="text-5xl md:text-7xl font-bold text-white leading-tight text-balance">
-          <span className="typing-text">Transformamos procesos manuales en sistemas inteligentes 24/7</span>
+          <span className="typing-text">Elevamos tu negocio con automatización inteligente</span>
           <span ref={cursorRef} className="typing-cursor"></span>
         </h1>
 
