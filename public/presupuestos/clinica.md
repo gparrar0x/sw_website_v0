@@ -40,7 +40,7 @@ Asistente virtual con IA que automatiza el 80% de la gestión de citas vía What
 
 ---
 
-## Qué Incluye (Fase 1)
+## Qué Incluye
 
 ### Cobertura
 
@@ -80,7 +80,7 @@ Asistente virtual con IA que automatiza el 80% de la gestión de citas vía What
 - Configuración de WhatsApp Business
 - Setup de calendarios y base de datos
 - Flujos conversacionales diseñados
-- Integraciones con Google Calendar y Sheets
+- Integraciones con Google Calendar, Sheets y Gmail
 - Sistema de routing con Claude AI
 
 ### Semanas 3-4: Testing y Ajustes
