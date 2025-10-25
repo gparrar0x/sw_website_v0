@@ -1,7 +1,7 @@
 ---
 titulo: "Propuesta Bot Clínica San Martín"
 cliente: "Clínica San Martín"
-fecha: "2025-10-21"
+fecha: "2025-10-25"
 total: "USD 1,500 + USD 300/mes"
 contacto: "Gonzalo Parra · +54 11 2162 5416 · info@skywalking.com"
 ---
@@ -67,14 +67,15 @@ Asistente virtual con IA que automatiza el 80% de la gestión de citas vía What
 - Cancelación y reprogramación
 - Consulta de disponibilidad
 - Handoff a humano cuando sea necesario
-- Notificaciones por email (Gmail API)
+- Notificaciones por email al momento de confirmación de cita (Gmail API)
 
 ---
 
-## Implementación (5 semanas)
+## Implementación (4 semanas)
 
-### Semanas 1-3: Setup & Desarrollo
+### Semanas 1-2: Setup & Desarrollo
 
+- Entrevista con persona encargada actual de gestionar citas para conocer flujos actuales y procesos
 - Instalación de infraestructura (n8n, APIs)
 - Configuración de WhatsApp Business
 - Setup de calendarios y base de datos
@@ -82,7 +83,7 @@ Asistente virtual con IA que automatiza el 80% de la gestión de citas vía What
 - Integraciones con Google Calendar y Sheets
 - Sistema de routing con Claude AI
 
-### Semanas 4-5: Testing y Ajustes
+### Semanas 3-4: Testing y Ajustes
 
 - 20+ pruebas de flujos completos
 - Edge cases (dobles reservas, datos inválidos)
@@ -106,14 +107,25 @@ Incluye:
 
 ### Mantenimiento Mensual
 
-**USD 300/mes**
+**USD 300/mes - Mantenimiento Proactivo**
 
-Incluye:
+**Infraestructura incluida:**
+- Hosting n8n + Supabase + backups diarios
+- Tokens Claude (~500 conversaciones/mes)
+- Monitoreo 24/7 con alertas automáticas
 
-- Hosting n8n y Supabase
-- Tokens de IA Claude (~500 conversaciones)
-- Soporte y actualizaciones
-- Optimización mensual de flujos
+**Soporte técnico (4 horas/mes):**
+- Monitoreo proactivo de workflows
+- Fixes de errores críticos (< 24h)
+- Ajustes menores de flujos existentes
+- 1 llamada mensual de seguimiento (30min)
+
+**No incluye:**
+- Nuevos workflows o módulos (cotización aparte)
+- Integraciones con sistemas adicionales (cotización aparte)
+
+**Flexibilidad:**
+- Horas adicionales: USD 50/h (facturadas al final del mes)
 
 ### Costos Adicionales (Clínica)
 
@@ -124,7 +136,7 @@ Incluye:
 
 - Reducción significativa de tiempo en tareas operativas
 - Incremento en citas agendadas (menos pérdidas por falta de respuesta)
-- **Break-even estimado: 3-4 meses**
+- **Amortización estimada: 3-4 meses**
 ---
 ## Próximos Pasos
 ### 1. Call de validación (30 min)
