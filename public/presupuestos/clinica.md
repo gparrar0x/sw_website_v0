@@ -1,6 +1,6 @@
 ---
-titulo: "Propuesta Bot Clínica San Martín"
-cliente: "Clínica San Martín"
+titulo: "Propuesta Bot Clínica CABA"
+cliente: "Clínica CABA"
 fecha: "2025-10-25"
 total: "USD 1,500 + USD 300/mes"
 contacto: "Gonzalo Parra · +54 11 2162 5416 · info@skywalking.com"
