@@ -366,12 +366,13 @@
 /* Typing cursor for hero animation */
 .typing-cursor {
   display: inline-block;
-  width: 3px;
-  height: 1.2em;
+  width: 0.3em;
+  height: 0.3em;
   background-color: #EFEEE9;
-  margin-left: 4px;
+  border-radius: 50%;
+  margin-left: 8px;
   animation: blink-cursor 1s step-end infinite;
-  vertical-align: text-bottom;
+  vertical-align: middle;
 }
 
 /* Blinking cursor animation for hero typing effect */

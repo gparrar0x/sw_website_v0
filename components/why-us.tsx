@@ -1,20 +1,20 @@
-import { Sparkles, Shield, Rocket } from "lucide-react"
+import { Zap, Target, TrendingUp } from "lucide-react"
 
 const reasons = [
   {
-    icon: Sparkles,
-    title: "Innovación constante",
-    description: "Utilizamos las últimas tecnologías de IA para mantenerte a la vanguardia.",
+    icon: Zap,
+    title: "Velocidad sobre perfección",
+    description: "Implementaciones incrementales con ROI medible en semanas, no meses. Menos código, más valor.",
   },
   {
-    icon: Shield,
-    title: "Dominio técnico",
-    description: "Equipo especializado con años de experiencia en automatización empresarial.",
+    icon: Target,
+    title: "Arquitectura probada",
+    description: "Patrones reutilizables validados en producción. Google Sheets como DB = zero-cost + client-editable.",
   },
   {
-    icon: Rocket,
-    title: "Resultados rápidos",
-    description: "Implementaciones ágiles que generan valor desde la primera semana.",
+    icon: TrendingUp,
+    title: "Escala sin headcount",
+    description: "Multiplica capacidades operativas sin contratar más personal. Opera 24/7 automáticamente.",
   },
 ]
 
@@ -26,9 +26,9 @@ export function WhyUs() {
 
       <div className="max-w-5xl mx-auto relative z-10">
         <div className="text-center mb-16 space-y-4">
-          <h2 className="text-4xl md:text-5xl font-bold text-white text-balance">Por qué elegir Skywalking</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-white text-balance">Por qué Skywalking</h2>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto text-pretty">
-            Combinamos excelencia técnica con visión artística para crear soluciones que destacan.
+            Tecnología que potencia personas, no las reemplaza. Resultados medibles, arquitectura probada.
           </p>
         </div>
 

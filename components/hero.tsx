@@ -2,44 +2,8 @@
 
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
-import { useEffect, useRef } from "react"
 
 export function Hero() {
-  const titleRef = useRef<HTMLHeadingElement>(null)
-  const cursorRef = useRef<HTMLSpanElement>(null)
-
-  useEffect(() => {
-    const title = titleRef.current
-    const cursor = cursorRef.current
-    if (!title || !cursor) return
-
-    const text = 'Elevamos tu negocio con automatización inteligente'
-
-    // Clear title and prepare cursor
-    const textSpan = title.querySelector('.typing-text') as HTMLSpanElement
-    if (textSpan) {
-      textSpan.textContent = ''
-    }
-
-    let i = 0
-    let timerId: NodeJS.Timeout
-
-    const typeWriter = () => {
-      if (i < text.length && textSpan) {
-        textSpan.textContent += text.charAt(i)
-        i++
-        timerId = setTimeout(typeWriter, 50)
-      }
-    }
-
-    // Start typing after a delay
-    const startTimer = setTimeout(typeWriter, 1000)
-
-    return () => {
-      clearTimeout(startTimer)
-      if (timerId) clearTimeout(timerId)
-    }
-  }, [])
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-4">
@@ -55,14 +19,13 @@ export function Hero() {
           <span className="text-[#EFEEE9] text-sm font-medium">Skywalking.dev</span>
         </div>
 
-        <h1 ref={titleRef} className="text-5xl md:text-7xl font-bold text-white leading-tight text-balance">
-          <span className="typing-text"></span>
-          <span ref={cursorRef} className="typing-cursor"></span>
+        <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight text-balance">
+          Ayudamos a empresas de todos los tamaños a escalar usando IA y automatizaciones
+          <span className="typing-cursor"></span>
         </h1>
 
         <p className="text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto text-pretty leading-relaxed">
-          Automatización empresarial con IA para empresas LATAM que buscan eficiencia, innovación y transformación
-          digital.
+          Desde emprendimientos unipersonales hasta grandes corporaciones, multiplicamos capacidades sin multiplicar headcount.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">

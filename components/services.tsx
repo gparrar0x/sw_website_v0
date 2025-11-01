@@ -1,37 +1,26 @@
 import { Card } from "@/components/ui/card"
-import { Bot, Workflow, Zap, BarChart3, Building2, Users } from "lucide-react"
+import { User, Users, Building, Building2 } from "lucide-react"
 
 const services = [
   {
-    icon: Bot,
-    title: "Agentes de IA",
-    description: "Asistentes inteligentes que automatizan tareas repetitivas y responden consultas 24/7.",
-  },
-  {
-    icon: Workflow,
-    title: "Automatización de Procesos",
-    description: "Conectamos tus herramientas y eliminamos trabajo manual entre sistemas.",
-  },
-  {
-    icon: Zap,
-    title: "Integración Inteligente",
-    description: "Sincronizamos datos en tiempo real entre todas tus plataformas empresariales.",
-  },
-  {
-    icon: BarChart3,
-    title: "Análisis Predictivo",
-    description: "Transformamos datos en insights accionables con modelos de IA avanzados.",
-  },
-  {
-    icon: Building2,
-    title: "Soluciones a Medida para PyMEs",
-    description:
-      "Desarrollamos sistemas personalizados que se adaptan al tamaño y necesidades específicas de tu empresa.",
+    icon: User,
+    title: "Empresas Unipersonales",
+    description: "Automatiza tareas repetitivas, libera tiempo para lo estratégico. Opera 24/7 sin contratar personal.",
   },
   {
     icon: Users,
-    title: "Acompañamiento en Transformación Digital",
-    description: "Te guiamos paso a paso en la adopción de tecnología, capacitando a tu equipo en el proceso.",
+    title: "Pequeñas Empresas",
+    description: "Sistemas completos que operan sin parar: bots conversacionales, e-commerce, gestión de clientes.",
+  },
+  {
+    icon: Building,
+    title: "Medianas Empresas",
+    description: "Escala operaciones sin crecimiento lineal de costos. Más output, menos esfuerzo manual.",
+  },
+  {
+    icon: Building2,
+    title: "Grandes Corporaciones",
+    description: "Optimiza procesos existentes, integra sistemas legacy con IA moderna para máxima eficiencia.",
   },
 ]
 
@@ -40,13 +29,13 @@ export function Services() {
     <section className="py-32 px-4 relative">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16 space-y-4">
-          <h2 className="text-4xl md:text-5xl font-bold text-white text-balance">Servicios que impulsan tu negocio</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-white text-balance">A quién servimos</h2>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto text-pretty">
-            Soluciones de automatización diseñadas para escalar tu operación sin contratar más personal.
+            Soluciones de IA y automatización diseñadas para cada etapa de crecimiento empresarial.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((service, index) => {
             const Icon = service.icon
             return (

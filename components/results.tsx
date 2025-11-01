@@ -1,25 +1,25 @@
-import { TrendingUp, Clock, Users, Target } from "lucide-react"
+import { Rocket, FileCheck, Layers, Clock } from "lucide-react"
 
 const metrics = [
   {
-    icon: TrendingUp,
-    value: "85%",
-    label: "Reducción de errores manuales",
+    icon: Rocket,
+    value: "8",
+    label: "Proyectos activos en producción",
+  },
+  {
+    icon: FileCheck,
+    value: "100%",
+    label: "Cobertura PRD completa",
+  },
+  {
+    icon: Layers,
+    value: "4",
+    label: "Verticales de industria (Health, Food, Automation, FinTech)",
   },
   {
     icon: Clock,
-    value: "40h",
-    label: "Ahorradas por semana en promedio",
-  },
-  {
-    icon: Users,
-    value: "3x",
-    label: "Capacidad sin contratar personal",
-  },
-  {
-    icon: Target,
     value: "24/7",
-    label: "Operación continua automatizada",
+    label: "Operación automatizada continua",
   },
 ]
 
@@ -32,10 +32,10 @@ export function Results() {
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="text-center mb-16 space-y-4">
           <h2 className="text-4xl md:text-5xl font-bold text-white text-balance">
-            Resultados que transforman negocios
+            Portfolio probado en producción
           </h2>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto text-pretty">
-            Nuestros clientes experimentan mejoras medibles desde el primer mes.
+            Soluciones reales, funcionando hoy en empresas de múltiples sectores.
           </p>
         </div>
 
