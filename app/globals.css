@@ -10,7 +10,8 @@
      ======================================== */
 
   /* Base Foundation (del manual de marca existente) */
-  --sky-black: #000000;         /* Negro absoluto - Fondo principal */
+  --sky-black: #0C1A27;         /* Negro azulado - Fondo principal */
+  --sky-black-absolute: #000000; /* Negro absoluto - Alternativo */
   --sky-white: #EFEEE9;         /* Beige claro - Tarjetas y superficies */
   --sky-beige-warm: #E8E2CF;    /* Beige cálido - Acentos y hover (legacy) */
 

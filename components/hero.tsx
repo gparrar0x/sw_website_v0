@@ -30,7 +30,7 @@ export function Hero() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
           <Button
             size="lg"
-            className="border-2 border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-black text-lg px-8 py-6 rounded-lg group transition-all duration-300 hover:scale-105 font-semibold bg-transparent"
+            className="bg-[var(--sky-gold)] text-black hover:bg-[var(--sky-orange)] text-lg px-8 py-6 rounded-xl group transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-[var(--sky-gold)]/50 font-semibold"
             onClick={() => {
               document.getElementById('contacto')?.scrollIntoView({
                 behavior: 'smooth',
