@@ -4,39 +4,82 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --background: #000000;
-  --foreground: #ffffff;
-  --card: #efeee9;
-  --card-foreground: #1a1a1a;
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: #333333;
-  --muted-foreground: #a0a0a0;
-  --accent: #e8e2cf;
-  --accent-foreground: #1a1a1a;
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.577 0.245 27.325);
-  --border: #2a2a2a;
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
+  /* ========================================
+     SKYWALKING COLOR SYSTEM v2.1
+     Integración: Manual de Marca + Acentos Estratégicos
+     ======================================== */
+
+  /* Base Foundation (del manual de marca existente) */
+  --sky-black: #000000;         /* Negro absoluto - Fondo principal */
+  --sky-white: #EFEEE9;         /* Beige claro - Tarjetas y superficies */
+  --sky-beige-warm: #E8E2CF;    /* Beige cálido - Acentos y hover (legacy) */
+
+  /* Extended Base (nuevos - profesionalismo técnico) */
+  --sky-blue: #5F7382;          /* Azul-gris - Color marca profesional */
+  --sky-light: #B4C3CD;         /* Azul claro - Fondos sutiles */
+  --sky-warm: #918778;          /* Tierra - Contraste cálido, texto secundario */
+
+  /* Action Accents (nuevos - conversión optimizada) */
+  --sky-gold: #D4AF37;          /* Dorado - Premium, CTAs primarios */
+  --sky-orange: #E8833A;        /* Naranja - Energía, urgencia, hovers */
+  --sky-red: #E74C3C;           /* Rojo - Alertas, acciones críticas */
+
+  /* Functional (del manual de marca existente) */
+  --sky-green: #25D366;         /* Verde WhatsApp - Botón contacto */
+
+  /* ========================================
+     SEMANTIC TOKENS (uso específico)
+     ======================================== */
+
+  --background: var(--sky-black);
+  --foreground: var(--sky-white);
+  --card: var(--sky-white);
+  --card-foreground: var(--sky-dark);
+  --popover: var(--sky-white);
+  --popover-foreground: var(--sky-dark);
+
+  /* Primary = Color marca (azul-gris) */
+  --primary: var(--sky-blue);
+  --primary-foreground: var(--sky-white);
+
+  /* Secondary = Cálido */
+  --secondary: var(--sky-warm);
+  --secondary-foreground: var(--sky-white);
+
+  /* Muted = Texto secundario */
+  --muted: var(--sky-dark);
+  --muted-foreground: var(--sky-warm);
+
+  /* Accent = Dorado (CTAs) */
+  --accent: var(--sky-gold);
+  --accent-foreground: var(--sky-dark);
+
+  /* Destructive = Rojo */
+  --destructive: var(--sky-red);
+  --destructive-foreground: var(--sky-white);
+
+  /* UI Elements */
+  --border: var(--sky-blue);
+  --input: var(--sky-light);
+  --ring: var(--sky-gold);
   --radius: 0.75rem;
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+
+  /* Charts (usando acentos) */
+  --chart-1: var(--sky-gold);
+  --chart-2: var(--sky-orange);
+  --chart-3: var(--sky-blue);
+  --chart-4: var(--sky-light);
+  --chart-5: var(--sky-warm);
+
+  /* Sidebar */
+  --sidebar: var(--sky-white);
+  --sidebar-foreground: var(--sky-dark);
+  --sidebar-primary: var(--sky-blue);
+  --sidebar-primary-foreground: var(--sky-white);
+  --sidebar-accent: var(--sky-light);
+  --sidebar-accent-foreground: var(--sky-dark);
+  --sidebar-border: var(--sky-blue);
+  --sidebar-ring: var(--sky-gold);
 }
 
 .dark {
@@ -363,24 +406,44 @@
   }
 }
 
-/* Typing cursor for hero animation */
+/* Typing cursor for hero animation - Enhanced with glow */
 .typing-cursor {
   display: inline-block;
-  width: 0.3em;
-  height: 0.3em;
+  width: 0.4em;
+  height: 0.4em;
   background-color: #EFEEE9;
   border-radius: 50%;
   margin-left: 8px;
-  animation: blink-cursor 1s step-end infinite;
+  animation: pulse-cursor 2s ease-in-out infinite;
   vertical-align: middle;
+  box-shadow: 0 0 10px rgba(239, 238, 233, 0.5);
 }
 
-/* Blinking cursor animation for hero typing effect */
-@keyframes blink-cursor {
-  0%, 49% {
+/* Pulsing cursor animation with glow effect */
+@keyframes pulse-cursor {
+  0%, 100% {
     opacity: 1;
+    transform: scale(1);
+    box-shadow: 0 0 10px rgba(239, 238, 233, 0.5);
   }
-  50%, 100% {
-    opacity: 0;
+  50% {
+    opacity: 0.4;
+    transform: scale(0.8);
+    box-shadow: 0 0 20px rgba(239, 238, 233, 0.8);
+  }
+}
+
+/* Hero background - responsive optimization */
+.hero-background {
+  background-image: url("/hero-background-building.png");
+  background-size: cover;
+  background-position: center 30%;
+  background-repeat: no-repeat;
+}
+
+/* Mobile: use gradient fallback for better performance */
+@media (max-width: 768px) {
+  .hero-background {
+    background-image: linear-gradient(to bottom, #0A0E27, #1a1f3a);
   }
 }

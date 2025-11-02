@@ -4,14 +4,13 @@ import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
 
 export function Hero() {
-
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-4">
-      {/* Hero Background with Animated Orbs */}
+      {/* Hero Background Image */}
       <div className="absolute top-0 left-0 right-0 bottom-0 z-0 overflow-hidden">
-        <div className="gradient-orb orb-1" />
-        <div className="gradient-orb orb-2" />
-        <div className="gradient-orb orb-3" />
+        <div className="absolute inset-0 hero-background" />
+        {/* Overlay for text legibility */}
+        <div className="absolute inset-0 bg-black/40" />
       </div>
 
       <div className="relative z-10 max-w-5xl mx-auto text-center space-y-8">
@@ -20,20 +19,20 @@ export function Hero() {
         </div>
 
         <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight text-balance">
-          Ayudamos a empresas de todos los tamaños a escalar usando IA y automatizaciones
+          Ayudamos a empresas a escalar usando Inteligencia Artificial
           <span className="typing-cursor"></span>
         </h1>
 
-        <p className="text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto text-pretty leading-relaxed">
-          Desde emprendimientos unipersonales hasta grandes corporaciones, multiplicamos capacidades sin multiplicar headcount.
+        <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto text-pretty leading-relaxed">
+          Te proveemos las herramientas para escalar tu negocio usando IA.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
-          <Button 
-            size="lg" 
-            className="bg-[#EFEEE9] text-black hover:bg-[#E8E2CF] text-lg px-8 py-6 rounded-xl group"
+          <Button
+            size="lg"
+            className="border-2 border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-black text-lg px-8 py-6 rounded-lg group transition-all duration-300 hover:scale-105 font-semibold bg-transparent"
             onClick={() => {
-              document.getElementById('contacto')?.scrollIntoView({ 
+              document.getElementById('contacto')?.scrollIntoView({
                 behavior: 'smooth',
                 block: 'start'
               })

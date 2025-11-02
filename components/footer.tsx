@@ -7,7 +7,12 @@ export function Footer() {
         <div className="flex justify-between items-start mb-12">
           <div className="space-y-4">
             <h3 className="text-2xl font-bold text-[#EFEEE9]">Skywalking.dev</h3>
-            <p className="text-gray-400 leading-relaxed">Automatización empresarial con IA para empresas LATAM.</p>
+            <p className="text-gray-400 leading-relaxed">
+              Automatización con AI, Agentes conversacionales, Transformación digital
+            </p>
+            <p className="text-gray-400 leading-relaxed">
+              Especializados en empresas LATAM en crecimiento (10-500 empleados)
+            </p>
             <p className="text-gray-400 leading-relaxed">San Martin de los Andes, Argentina</p>
           </div>
 
