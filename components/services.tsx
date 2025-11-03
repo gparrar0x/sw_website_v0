@@ -66,9 +66,9 @@ export function Services() {
       <section className="py-32 px-4 relative">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16 space-y-4">
-            <h2 className="text-4xl md:text-5xl font-bold text-white text-balance">Nuestra Solución</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-white text-balance">Nuestras Soluciones</h2>
             <p className="text-xl text-gray-400 max-w-2xl mx-auto text-pretty">
-              Resultado común: Más output, menos esfuerzo manual, ROI medible en semanas
+              Nos especializamos en herramientas para tu negocio.
             </p>
           </div>
 
