@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "og-image": "node scripts/convert-og-image.js"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",

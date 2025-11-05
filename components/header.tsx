@@ -9,7 +9,7 @@ export function Header() {
       <Link href="/" className="inline-block">
         <Image
           src="/logo.png"
-          alt="Skywalking.dev Logo"
+          alt="Skywalking.dev - Automatización Empresarial con IA en Argentina"
           width={60}
           height={60}
           className="hover:scale-110 transition-transform duration-300"
