@@ -51,6 +51,7 @@ export function Footer() {
 
         <div className="pt-8 border-t border-[#EFEEE9]/10 text-center text-gray-500">
           <p>&copy; {new Date().getFullYear()} Skywalking.dev. Todos los derechos reservados.</p>
+          <p>Caminos con ❤️ para empresas que piensan en grande.</p>
         </div>
       </div>
     </footer>
