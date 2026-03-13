@@ -24,7 +24,7 @@ export function WhyUs() {
       {/* Large animated gradient orb */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-br from-[#E8E2CF]/20 via-[#EFEEE9]/10 to-transparent rounded-full blur-3xl animate-float" />
 
-      <div className="max-w-5xl mx-auto relative z-10">
+      <div className="max-w-6xl mx-auto relative z-10">
         <div className="text-center mb-16 space-y-4">
           <h2 className="text-4xl md:text-5xl font-bold text-white text-balance">Por qué Skywalking</h2>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto text-pretty">
