@@ -90,7 +90,7 @@ export function ContactForm() {
                   type="text"
                   placeholder="Juan Pérez"
                   required
-                  className="bg-white border-gray-300 text-black placeholder:text-gray-500"
+                  className="bg-[var(--sky-white)] border-2 border-[var(--sky-light)] text-black placeholder:text-[var(--sky-warm)]/60 focus:border-[var(--sky-blue)] focus:ring-2 focus:ring-[var(--sky-gold)]/30 transition-colors duration-200"
                 />
               </div>
 
@@ -104,7 +104,7 @@ export function ContactForm() {
                   type="email"
                   placeholder="juan@empresa.com"
                   required
-                  className="bg-white border-gray-300 text-black placeholder:text-gray-500"
+                  className="bg-[var(--sky-white)] border-2 border-[var(--sky-light)] text-black placeholder:text-[var(--sky-warm)]/60 focus:border-[var(--sky-blue)] focus:ring-2 focus:ring-[var(--sky-gold)]/30 transition-colors duration-200"
                 />
               </div>
             </div>
@@ -119,7 +119,7 @@ export function ContactForm() {
                 type="tel"
                 placeholder="+54 9 11 1234-5678"
                 required
-                className="bg-white border-gray-300 text-black placeholder:text-gray-500"
+                className="bg-[var(--sky-white)] border-2 border-[var(--sky-light)] text-black placeholder:text-[var(--sky-warm)]/60 focus:border-[var(--sky-blue)] focus:ring-2 focus:ring-[var(--sky-gold)]/30 transition-colors duration-200"
               />
             </div>
 
@@ -132,7 +132,7 @@ export function ContactForm() {
                 name="descripcion"
                 rows={5}
                 placeholder="Describe brevemente el proceso que quieres automatizar y cuál es tu principal dolor actual..."
-                className="w-full px-3 py-2 bg-white border border-gray-300 rounded-md text-black placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent resize-none"
+                className="w-full px-3 py-2 bg-[var(--sky-white)] border-2 border-[var(--sky-light)] rounded-md text-black placeholder:text-[var(--sky-warm)]/60 focus:outline-none focus:border-[var(--sky-blue)] focus:ring-2 focus:ring-[var(--sky-gold)]/30 transition-colors duration-200 resize-none"
               />
             </div>
 

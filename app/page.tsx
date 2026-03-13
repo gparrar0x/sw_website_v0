@@ -1,6 +1,7 @@
 import { Hero } from "@/components/hero"
 import { Services } from "@/components/services"
 import { WhyUs } from "@/components/why-us"
+import { ProjectsPreview } from "@/components/projects-preview"
 import { ContactForm } from "@/components/contact-form"
 import { WhatsAppButton } from "@/components/whatsapp-button"
 import { Footer } from "@/components/footer"
@@ -11,6 +12,7 @@ export default function Home() {
       <Hero />
       <Services />
       <WhyUs />
+      <ProjectsPreview />
       <ContactForm />
       <Footer />
       <WhatsAppButton />

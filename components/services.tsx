@@ -63,7 +63,7 @@ export function Services() {
   return (
     <>
       {/* Nuestra Solución */}
-      <section className="py-32 px-4 relative">
+      <section className="py-16 px-4 relative">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16 space-y-4">
             <h2 className="text-4xl md:text-5xl font-bold text-white text-balance">Nuestras Soluciones</h2>
@@ -78,9 +78,10 @@ export function Services() {
               return (
                 <Card
                   key={index}
-                  className="bg-[#EFEEE9] border-none p-8 hover:bg-[#E8E2CF] transition-all duration-300 group hover:scale-105 hover:shadow-lg flex flex-col"
+                  className="relative bg-[#EFEEE9] border border-white/10 p-8 hover:border-[var(--sky-gold)]/30 transition-all duration-300 group hover:shadow-lg flex flex-col overflow-hidden"
                 >
-                  <div className="space-y-4 flex-grow">
+                  <div className="absolute inset-0 bg-gradient-to-br from-transparent via-black/5 to-black/10 pointer-events-none" />
+                  <div className="relative z-10 space-y-4 flex-grow">
                     <div className="w-14 h-14 bg-black rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
                       <Icon className="h-7 w-7 text-[#EFEEE9]" />
                     </div>
@@ -103,7 +104,7 @@ export function Services() {
       </section>
 
       {/* A quién servimos */}
-      <section className="py-32 px-4 relative">
+      <section className="py-16 px-4 relative">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16 space-y-4">
             <h2 className="text-4xl md:text-5xl font-bold text-white text-balance">A quién servimos</h2>
@@ -118,9 +119,10 @@ export function Services() {
               return (
                 <Card
                   key={index}
-                  className="bg-[#EFEEE9] border-none p-8 hover:bg-[#E8E2CF] transition-all duration-300 group hover:scale-105 hover:shadow-lg cursor-pointer"
+                  className="relative bg-[#EFEEE9] border border-white/10 p-8 hover:border-[var(--sky-gold)]/30 transition-all duration-300 group hover:shadow-lg cursor-pointer overflow-hidden"
                 >
-                  <div className="space-y-4">
+                  <div className="absolute inset-0 bg-gradient-to-br from-transparent via-black/5 to-black/10 pointer-events-none" />
+                  <div className="relative z-10 space-y-4">
                     <div className="w-14 h-14 bg-black rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
                       <Icon className="h-7 w-7 text-[#EFEEE9]" />
                     </div>
