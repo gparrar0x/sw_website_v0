@@ -3,7 +3,7 @@ const projects = [
     name: "Kronos",
     hint: "Cada gramo cuenta.",
     description:
-      "Monitoreo industrial de balanzas en tiempo real. Salud de dispositivos, alertas, diagnóstico remoto. Multi-sitio.",
+      "Sistema de monitoreo de pesajes industriales. Salud de dispositivos, alertas, diagnóstico remoto. Múltiples sedes en un mismo sistema.",
     image: "/projects/kronos.webp",
     status: "En desarrollo",
   },
@@ -16,8 +16,8 @@ const projects = [
     status: "Activo",
   },
   {
-    name: "Miicelio",
-    hint: "La plataforma.",
+    name: "miicel.io",
+    hint: "La red como plataforma.",
     description:
       "SaaS para gestión empresarial con inteligencia artificial integrada. Todo lo que necesitás, en un solo lugar.",
     image: "/projects/miicel.webp",
