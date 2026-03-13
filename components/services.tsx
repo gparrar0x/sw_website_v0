@@ -40,7 +40,7 @@ const solutions = [
     title: "Automatización de Procesos Complejos",
     subtitle: "Flujos inteligentes que conectan todos tus sistemas",
     features: [
-      "Integración entre WhatsApp, email, CRM, y más",
+      "Integración entre sistemas de mensajería, correo, gestión comercial y más",
       "Procesamiento automático de documentos",
       "Generación de reportes en tiempo real",
     ],

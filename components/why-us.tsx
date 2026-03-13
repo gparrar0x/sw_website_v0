@@ -8,13 +8,13 @@ const reasons = [
   },
   {
     icon: Target,
-    title: "Código es liability, valor es asset",
-    description: "Patrones reutilizables validados en producción. Google Sheets como DB = zero-cost + client-editable.",
+    title: "Soluciones simples, resultados reales",
+    description: "Usamos lo que ya funciona. Herramientas probadas, sin complejidad innecesaria. Menos código, menos problemas.",
   },
   {
     icon: TrendingUp,
     title: "Tecnología potencia personas",
-    description: "Multiplica capacidades operativas sin contratar más personal. Opera 24/7 automáticamente. No reemplazamos personas, las potenciamos.",
+    description: "Software escrito con IA, diseñado y probado por humanos. Aumentamos las capacidades de las personas de tu equipo.",
   },
 ]
 
