@@ -12,15 +12,6 @@ export default function robots(): MetadataRoute.Robots {
           '/cliente/', // Páginas privadas
         ],
       },
-      {
-        // Bloquear scrapers de IA si es necesario
-        userAgent: 'GPTBot',
-        disallow: '/',
-      },
-      {
-        userAgent: 'ChatGPT-User',
-        disallow: '/',
-      },
     ],
     sitemap: 'https://skywalking.dev/sitemap.xml',
   }

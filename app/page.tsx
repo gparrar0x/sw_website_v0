@@ -1,10 +1,13 @@
+import dynamic from "next/dynamic"
 import { Hero } from "@/components/hero"
 import { Services } from "@/components/services"
-import { WhyUs } from "@/components/why-us"
-import { ProjectsPreview } from "@/components/projects-preview"
-import { ContactForm } from "@/components/contact-form"
-import { WhatsAppButton } from "@/components/whatsapp-button"
 import { Footer } from "@/components/footer"
+
+// Below-the-fold: lazy load to reduce initial JS bundle
+const WhyUs = dynamic(() => import("@/components/why-us").then(m => ({ default: m.WhyUs })))
+const ProjectsPreview = dynamic(() => import("@/components/projects-preview").then(m => ({ default: m.ProjectsPreview })))
+const ContactForm = dynamic(() => import("@/components/contact-form").then(m => ({ default: m.ContactForm })))
+const WhatsAppButton = dynamic(() => import("@/components/whatsapp-button").then(m => ({ default: m.WhatsAppButton })))
 
 export default function Home() {
   return (

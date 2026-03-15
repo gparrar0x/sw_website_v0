@@ -440,20 +440,7 @@
   }
 }
 
-/* Hero background - responsive optimization */
-.hero-background {
-  background-image: url("/hero-background-building.png");
-  background-size: cover;
-  background-position: center 30%;
-  background-repeat: no-repeat;
-}
-
-/* Mobile: use gradient fallback for better performance */
-@media (max-width: 768px) {
-  .hero-background {
-    background-image: linear-gradient(to bottom, #0A0E27, #1a1f3a);
-  }
-}
+/* Hero background handled by next/image component */
 
 /* FAQ-specific animations */
 @keyframes fade-in {

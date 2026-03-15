@@ -1,8 +1,11 @@
 'use client'
 
 import React, { useState } from 'react'
-import html2canvas from 'html2canvas'
-import { jsPDF } from 'jspdf'
+// Dynamic imports — these libs are ~65KB gzipped, only load on click
+const loadPdfLibs = () => Promise.all([
+  import('html2canvas'),
+  import('jspdf'),
+] as const)
 
 interface ExportPDFButtonProps {
   filename: string
@@ -21,6 +24,8 @@ export default function ExportPDFButton({ filename, elementId }: ExportPDFButton
         console.error('Elemento no encontrado')
         return
       }
+
+      const [{ default: html2canvas }, { jsPDF }] = await loadPdfLibs()
 
       // Capturar el contenido como imagen
       const canvas = await html2canvas(element, {

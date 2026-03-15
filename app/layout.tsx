@@ -5,14 +5,11 @@ import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 import { Header } from "@/components/header"
 
-import { Plus_Jakarta_Sans, Geist as V0_Font_Geist, Geist_Mono as V0_Font_Geist_Mono, Source_Serif_4 as V0_Font_Source_Serif_4 } from 'next/font/google'
+import { Plus_Jakarta_Sans, Geist as V0_Font_Geist } from 'next/font/google'
 
-// Initialize fonts
-const geist = V0_Font_Geist({ subsets: ['latin'], weight: ["400","500","600","700"], variable: '--font-body' })
-const _geistMono = V0_Font_Geist_Mono({ subsets: ['latin'], weight: ["100","200","300","400","500","600","700","800","900"] })
-const _sourceSerif_4 = V0_Font_Source_Serif_4({ subsets: ['latin'], weight: ["200","300","400","500","600","700","800","900"] })
-
-const plusJakarta = Plus_Jakarta_Sans({ subsets: ['latin'], weight: ['500', '600', '700'], variable: '--font-heading' })
+// Initialize fonts — only load what's actually used
+const geist = V0_Font_Geist({ subsets: ['latin'], weight: ["400","500","600","700"], variable: '--font-body', display: 'swap' })
+const plusJakarta = Plus_Jakarta_Sans({ subsets: ['latin'], weight: ['500', '600', '700'], variable: '--font-heading', display: 'swap' })
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://skywalking.dev'),
@@ -196,7 +193,7 @@ export default function RootLayout({
   ]
 
   return (
-    <html lang="es">
+    <html lang="es-AR">
       <head>
         {/* JSON-LD Schemas */}
         <script

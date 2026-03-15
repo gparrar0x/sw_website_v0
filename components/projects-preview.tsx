@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 const projects = [
   {
     name: "Kronos",
@@ -52,10 +54,14 @@ export function ProjectsPreview() {
               key={project.name}
               className={`group relative h-72 md:h-96 rounded-2xl overflow-hidden flex items-end`}
             >
-              {/* Background image */}
-              <div
-                className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-700 group-hover:scale-105"
-                style={{ backgroundImage: `url(${project.image})` }}
+              {/* Background image — optimized with next/image */}
+              <Image
+                src={project.image}
+                alt={project.name}
+                fill
+                sizes="(max-width: 768px) 100vw, 1152px"
+                className="object-cover object-center transition-transform duration-700 group-hover:scale-105"
+                loading="lazy"
               />
 
               {/* Overlay */}

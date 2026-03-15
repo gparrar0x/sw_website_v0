@@ -1,59 +1,68 @@
 'use client'
 
-import { motion } from 'framer-motion'
+import { useEffect, useState } from 'react'
+import Image from 'next/image'
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
 
 export function Hero() {
+  const [mounted, setMounted] = useState(false)
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-4">
-      {/* Hero Background Image */}
+      {/* Hero Background Image — optimized with next/image */}
       <div className="absolute top-0 left-0 right-0 bottom-0 z-0 overflow-hidden">
-        <div className="absolute inset-0 hero-background" />
+        <Image
+          src="/hero-background-building.webp"
+          alt="Skywalking.dev - Automatización empresarial con IA en Argentina y LATAM"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-[center_30%] hidden md:block"
+        />
+        {/* Mobile: gradient fallback for performance */}
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0A0E27] to-[#1a1f3a] md:hidden" />
         {/* Overlay for text legibility */}
         <div className="absolute inset-0 bg-black/40" />
       </div>
 
       <div className="relative z-10 max-w-5xl mx-auto text-center space-y-8">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="inline-block px-4 py-2 bg-[#EFEEE9]/10 border border-[#EFEEE9]/20 rounded-full mb-4"
+        <div
+          className={`inline-block px-4 py-2 bg-[#EFEEE9]/10 border border-[#EFEEE9]/20 rounded-full mb-4 transition-all duration-800 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}`}
+          style={{ transitionDelay: '200ms' }}
           data-testid="hero-badge"
         >
           <span className="text-[#EFEEE9] text-sm font-medium">Skywalking.dev</span>
-        </motion.div>
+        </div>
 
-        <motion.h1
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.4 }}
-          className="text-5xl md:text-7xl font-bold text-white leading-tight text-balance"
+        {/* H1 with target keyword — always server-rendered in DOM */}
+        <h1
+          className={`text-5xl md:text-7xl font-bold text-white leading-tight text-balance transition-all duration-1000 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-7'}`}
+          style={{ transitionDelay: '400ms' }}
           data-testid="hero-heading"
         >
-          Ayudamos a empresas a escalar usando{' '}
+          Automatización con IA para empresas{' '}
           <span className="bg-gradient-to-r from-[var(--sky-gold)] to-[var(--sky-orange)] bg-clip-text text-transparent">
-            Inteligencia Artificial
+            que quieren escalar
           </span>
-          <span className="typing-cursor" />
-        </motion.h1>
+        </h1>
 
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto text-pretty leading-relaxed"
+        {/* H2 tagline — secondary visual element */}
+        <p
+          className={`text-xl md:text-2xl text-white/90 max-w-3xl mx-auto text-pretty leading-relaxed transition-all duration-800 ${mounted ? 'opacity-100' : 'opacity-0'}`}
+          style={{ transitionDelay: '600ms' }}
           data-testid="hero-subtitle"
         >
-          Te proveemos las herramientas para escalar tu negocio usando IA.
-        </motion.p>
+          Construimos sistemas inteligentes que eliminan tareas manuales, conectan tus herramientas y liberan a tu equipo para lo que importa.
+        </p>
 
-        <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, delay: 0.8 }}
-          className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4"
+        <div
+          className={`flex flex-col sm:flex-row gap-4 justify-center items-center pt-4 transition-all duration-800 ${mounted ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}
+          style={{ transitionDelay: '800ms' }}
         >
           <Button
             size="lg"
@@ -69,7 +78,7 @@ export function Hero() {
             Contactanos
             <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
           </Button>
-        </motion.div>
+        </div>
       </div>
     </section>
   )
