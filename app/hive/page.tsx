@@ -28,13 +28,13 @@ import { CopyButton } from './copy-button'
 export const metadata: Metadata = {
   title: 'Hive — Plugin Claude Code | 40+ Skills + 9 Agentes IA',
   description:
-    'Plugin open source para Claude Code con 40+ skills de desarrollo. Agentes IA especializados, slash commands para Gmail, Slack, GitHub, Vercel, Supabase. Licencia MIT.',
+    'Plugin open source para Claude Code con 50+ skills de desarrollo. Agentes IA especializados, slash commands para Gmail, Slack, GitHub, Vercel, Supabase. Licencia MIT.',
   creator: 'Skywalking.dev',
   authors: [{ name: 'Skywalking.dev', url: 'https://skywalking.dev' }],
   openGraph: {
     title: 'Hive — Claude Code Plugin | 40+ AI Skills & 9 Specialist Agents',
     description:
-      'Open source plugin for Claude Code, Cursor, and Gemini CLI. Slash commands for Gmail, Slack, Supabase, Vercel, GitHub. 40+ skills, 9 specialist agents, one repo.',
+      'Open source plugin for Claude Code, Cursor, and Gemini CLI. Slash commands for Gmail, Slack, Supabase, Vercel, GitHub. 50+ skills, 9 specialist agents, one repo.',
     url: 'https://skywalking.dev/hive',
     images: [{ url: '/og-image.png', width: 1200, height: 630 }],
   },
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Hive — Plugin Claude Code | 40+ Skills + 9 Agentes IA',
     description:
-      'Plugin open source para Claude Code con 40+ skills de desarrollo. Agentes IA especializados, slash commands para Gmail, Slack, GitHub, Vercel, Supabase. Licencia MIT.',
+      'Plugin open source para Claude Code con 50+ skills de desarrollo. Agentes IA especializados, slash commands para Gmail, Slack, GitHub, Vercel, Supabase. Licencia MIT.',
   },
   alternates: {
     canonical: 'https://skywalking.dev/hive',
@@ -57,7 +57,7 @@ const SCHEMA_SOFTWARE = {
   '@context': 'https://schema.org',
   '@type': 'SoftwareApplication',
   name: 'Hive',
-  description: 'Plugin open source para Claude Code con 40+ skills y 9 agentes IA especializados',
+  description: 'Plugin open source para Claude Code con 50+ skills y 9 agentes IA especializados',
   applicationCategory: 'DeveloperApplication',
   operatingSystem: 'Windows, MacOS, Linux',
   offers: { '@type': 'Offer', priceCurrency: 'USD', price: '0' },
@@ -74,7 +74,7 @@ const SCHEMA_FAQ = {
       name: '¿Qué es Hive?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Plugin open source para Claude Code con 40+ skills y 9 agentes especializados en desarrollo, automatización e IA.',
+        text: 'Plugin open source para Claude Code con 50+ skills y 9 agentes especializados en desarrollo, automatización e IA.',
       },
     },
     {
@@ -162,7 +162,7 @@ cp .env.example .env`
 
 const PLUGIN_CODE = `claude plugin install ./hive`
 
-const SYNC_CODE = `uv run release.py   # Cursor, Gemini CLI, Codex`
+const SYNC_CODE = `uv run hive setup   # Cursor, Gemini CLI, Codex`
 
 // ─────────────────────────────────────────────
 // Sub-components (server-safe)
@@ -291,7 +291,7 @@ export default function HivePage() {
               className="text-lg sm:text-xl max-w-2xl mx-auto leading-relaxed"
               style={{ color: 'var(--sky-blue)' }}
             >
-              40+ skills. 9 agentes. Un solo plugin.
+              50+ skills. 9 agentes. Un solo plugin.
               <br className="hidden sm:block" />
               Compatible con Claude Code, Cursor, Gemini CLI y Codex.
             </p>

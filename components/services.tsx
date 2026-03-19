@@ -30,9 +30,9 @@ const solutions = [
     title: "Agentes AI Personalizados",
     subtitle: "Asistentes inteligentes que entienden tu negocio",
     features: [
-      "Chatbots que atienden clientes 24/7",
-      "Agentes que consultan tu base de datos",
-      "Asistentes que gestionan conocimiento interno",
+      "Chatbots que atienden clientes 24/7 en español",
+      "Agentes que consultan tu base de datos y responden en lenguaje natural",
+      "Análisis automático de llamadas de venta: qué funcionó, qué no",
     ],
   },
   {
@@ -40,9 +40,9 @@ const solutions = [
     title: "Automatización de Procesos Complejos",
     subtitle: "Flujos inteligentes que conectan todos tus sistemas",
     features: [
-      "Integración entre sistemas de mensajería, correo, gestión comercial y más",
-      "Procesamiento automático de documentos",
-      "Generación de reportes en tiempo real",
+      "Integración entre WhatsApp, email, CRM y tus herramientas actuales",
+      "Lee e interpreta facturas, contratos y reportes en PDF automáticamente",
+      "Monitoreo de precios de competencia actualizado sin intervención manual",
     ],
   },
   {
