@@ -1,6 +1,8 @@
 # sw_website — Skywalking.dev
 
 ## Design Rule
+- **Brand source of truth: `../../docs/PRODUCT_IDENTITY.md`** — logo, palette, typography, spacing, animation, assets
+- **Visual audit: `docs/VISUAL_IDENTITY.md`** — current implementation assessment + gaps
 - Cualquier cambio visual/UI → Aurora diseña primero (layout, colores, spacing, tipografía)
 - Pixel implementa después según spec de Aurora
 - No se commitea UI sin review de Aurora
@@ -12,14 +14,12 @@
 - Vercel deploy
 
 ## Design Tokens
-- `--sky-black: #0C1A27` / `--sky-blue: #5F7382` / `--sky-white: #EFEEE9`
-- `--sky-gold: #D4AF37` (CTAs) / `--sky-orange: #E8833A` (hover)
-- Fonts: Inter (body), Source Serif 4 (alt)
-- Cards: bg `#EFEEE9`, hover `#E8E2CF`
-- Background: gradient `#0A0E27` → `#1a1f3a`
+Design tokens are defined in `globals.css` and documented in `../../docs/PRODUCT_IDENTITY.md`.
+Do NOT hardcode colors — always use CSS variables (`var(--sky-gold)`, etc.).
 
 ## Convenciones
 - Componentes en `/components/`, páginas en `/app/`
 - Imágenes de proyecto en `/public/projects/` (webp)
-- Assets fuente en `/assets/`
+- Assets fuente en `/assets/` (source files, not served)
+- Logo + brand assets en `/public/` (served)
 - Contenido hardcoded en componentes (no CMS)
