@@ -26,23 +26,23 @@ import { CopyButton } from './copy-button'
 // ─────────────────────────────────────────────
 
 export const metadata: Metadata = {
-  title: 'Hive — Plugin Claude Code | 40+ Skills + 9 Agentes IA',
+  title: 'Hive — Plugin Claude Code | 40+ Skills + 10 Agentes IA',
   description:
-    'Plugin open source para Claude Code con 50+ skills de desarrollo. Agentes IA especializados, slash commands para Gmail, Slack, GitHub, Vercel, Supabase. Licencia MIT.',
+    'Plugin open source para Claude Code con 50+ skills de desarrollo. 10 agentes IA (1 orquestador + 9 especialistas), slash commands para Gmail, Slack, GitHub, Vercel, Supabase. Licencia MIT.',
   creator: 'Skywalking.dev',
   authors: [{ name: 'Skywalking.dev', url: 'https://skywalking.dev' }],
   openGraph: {
-    title: 'Hive — Claude Code Plugin | 40+ AI Skills & 9 Specialist Agents',
+    title: 'Hive — Claude Code Plugin | 40+ AI Skills & 10 Agents',
     description:
-      'Open source plugin for Claude Code, Cursor, and Gemini CLI. Slash commands for Gmail, Slack, Supabase, Vercel, GitHub. 50+ skills, 9 specialist agents, one repo.',
+      'Open source plugin for Claude Code, Cursor, and Gemini CLI. Slash commands for Gmail, Slack, Supabase, Vercel, GitHub. 50+ skills, 10 agents (1 orchestrator + 9 specialists), one repo.',
     url: 'https://skywalking.dev/hive',
     images: [{ url: '/og-image.png', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Hive — Plugin Claude Code | 40+ Skills + 9 Agentes IA',
+    title: 'Hive — Plugin Claude Code | 40+ Skills + 10 Agentes IA',
     description:
-      'Plugin open source para Claude Code con 50+ skills de desarrollo. Agentes IA especializados, slash commands para Gmail, Slack, GitHub, Vercel, Supabase. Licencia MIT.',
+      'Plugin open source para Claude Code con 50+ skills de desarrollo. 10 agentes IA (1 orquestador + 9 especialistas), slash commands para Gmail, Slack, GitHub, Vercel, Supabase. Licencia MIT.',
   },
   alternates: {
     canonical: 'https://skywalking.dev/hive',
@@ -57,7 +57,7 @@ const SCHEMA_SOFTWARE = {
   '@context': 'https://schema.org',
   '@type': 'SoftwareApplication',
   name: 'Hive',
-  description: 'Plugin open source para Claude Code con 50+ skills y 9 agentes IA especializados',
+  description: 'Plugin open source para Claude Code con 50+ skills y 10 agentes IA (1 orquestador + 9 especialistas)',
   applicationCategory: 'DeveloperApplication',
   operatingSystem: 'Windows, MacOS, Linux',
   offers: { '@type': 'Offer', priceCurrency: 'USD', price: '0' },
@@ -291,7 +291,7 @@ export default function HivePage() {
               className="text-lg sm:text-xl max-w-2xl mx-auto leading-relaxed"
               style={{ color: 'var(--sky-blue)' }}
             >
-              50+ skills. 9 agentes. Un solo plugin.
+              50+ skills. 10 agentes. Un solo plugin.
               <br className="hidden sm:block" />
               Compatible con Claude Code, Cursor, Gemini CLI y Codex.
             </p>
@@ -442,7 +442,7 @@ export default function HivePage() {
         </div>
       </section>
 
-      {/* ── AGENTS CAROUSEL ──────────────────── */}
+      {/* ── AGENTS ─────────────────────────────── */}
       <section className="px-6 py-24">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16 space-y-4">
@@ -450,8 +450,83 @@ export default function HivePage() {
               Un equipo completo, on demand.
             </h2>
             <p className="text-lg max-w-xl mx-auto leading-relaxed" style={{ color: 'var(--sky-blue)' }}>
-              Los agentes son especialistas con conocimiento profundo de su dominio. Delega una tarea, recibe el resultado. Cada agente sabe lo suyo — tú no tienes que saberlo.
+              Un orquestador que coordina. 9 especialistas que ejecutan. Delega una tarea, recibe el resultado.
             </p>
+          </div>
+
+          {/* ── Mentat — Orchestrator ──────────── */}
+          <div
+            data-testid="agent-mentat"
+            className="mb-16 p-6 sm:p-8 rounded-xl border"
+            style={{
+              background: 'rgba(12, 26, 39, 0.9)',
+              borderColor: 'rgba(212, 175, 55, 0.3)',
+            }}
+          >
+            <div className="flex flex-col sm:flex-row items-start gap-6">
+              {/* Avatar */}
+              <div
+                className="w-16 h-16 rounded-full flex-shrink-0 overflow-hidden"
+                style={{
+                  border: '2px solid rgba(212, 175, 55, 0.4)',
+                }}
+              >
+                <Image
+                  src="/mentat-avatar.png"
+                  alt="Mentat — AI General Advisor"
+                  width={64}
+                  height={64}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+
+              <div className="space-y-3 flex-1">
+                <div>
+                  <p className="text-lg font-bold" style={{ color: 'var(--sky-white)' }}>
+                    Mentat
+                  </p>
+                  <p
+                    className="text-sm font-medium"
+                    style={{ color: 'var(--sky-gold)' }}
+                  >
+                    AI General Advisor — Orquestador
+                  </p>
+                </div>
+                <p className="text-sm leading-relaxed max-w-2xl" style={{ color: 'var(--sky-blue)' }}>
+                  Ve patrones donde otros ven caos. Descompone trabajo complejo, delega a especialistas, sintetiza resultados y asegura la entrega. Arquitecto de sistemas + PM + tech lead en uno.
+                </p>
+                <div className="flex flex-wrap gap-2 pt-1">
+                  {['Planificación', 'Coordinación', 'Arquitectura', 'Workflows n8n'].map((tag) => (
+                    <span
+                      key={tag}
+                      className="text-xs px-2.5 py-1 rounded-full font-medium"
+                      style={{
+                        background: 'rgba(212, 175, 55, 0.1)',
+                        color: 'var(--sky-gold)',
+                        border: '1px solid rgba(212, 175, 55, 0.2)',
+                      }}
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* ── Specialists label ──────────────── */}
+          <div className="flex items-center gap-3 mb-6">
+            <span
+              className="text-sm font-semibold tracking-wide uppercase"
+              style={{ color: 'var(--sky-blue)' }}
+            >
+              9 especialistas
+            </span>
+            <div
+              className="flex-1 h-px"
+              style={{ background: 'rgba(95, 115, 130, 0.2)' }}
+              aria-hidden="true"
+            />
           </div>
 
           {/* Horizontal scroll carousel */}
@@ -604,7 +679,7 @@ export default function HivePage() {
               <Shield size={16} style={{ color: '#25D366', flexShrink: 0, marginTop: 2 }} aria-hidden="true" />
               <span>
                 <strong style={{ color: 'var(--sky-white)' }}>Cero API keys requeridas.</strong>{' '}
-                Solo agregá credenciales para las integraciones que uses.
+                Solo agrega credenciales para las integraciones que uses.
               </span>
             </div>
           </div>
