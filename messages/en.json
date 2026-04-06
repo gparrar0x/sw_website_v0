@@ -1,21 +1,21 @@
 {
   "Metadata": {
-    "title": "Skywalking.dev - AI-Powered Business Automation",
+    "title": "Skywalking.dev - We Augment Teams with AI",
     "titleTemplate": "%s | Skywalking.dev",
-    "description": "We help businesses scale using Artificial Intelligence. AI tools and solutions to grow your company across LATAM and beyond.",
-    "ogTitle": "AI Business Automation | Skywalking.dev",
-    "ogDescription": "Boutique agency specialising in AI-driven process automation. Measurable ROI in weeks, not months. SMEs across LATAM.",
-    "twitterTitle": "Skywalking.dev - AI-Powered Business Automation",
-    "twitterDescription": "We turn manual processes into intelligent 24/7 systems. Measurable ROI in weeks."
+    "description": "Scale your business with stronger teams, not bigger ones. AI solutions that empower your people across LATAM.",
+    "ogTitle": "Augment Teams with AI | Skywalking.dev",
+    "ogDescription": "We augment your team with AI: automation and intelligence solutions for LATAM businesses. Measurable ROI in weeks.",
+    "twitterTitle": "Skywalking.dev - Augment Teams with AI",
+    "twitterDescription": "We empower teams with AI, we don't replace people. Stronger, not bigger."
   },
   "Header": {
-    "logoAlt": "Skywalking.dev - AI Business Automation",
+    "logoAlt": "Skywalking.dev - Augment Teams with AI",
     "switchLanguage": "Cambiar a Español",
     "currentLanguage": "EN"
   },
   "Hero": {
     "badge": "Skywalking.dev",
-    "imageAlt": "Skywalking.dev - AI business automation for LATAM companies",
+    "imageAlt": "Augment teams with AI: intelligent automation solutions for LATAM companies",
     "heading": "We augment teams",
     "headingHighlight": "with AI",
     "subtitle": "Solutions to scale companies with stronger teams, not bigger ones.",
@@ -149,8 +149,8 @@
         "description": "Early wildfire alert system. Real-time monitoring to protect Patagonia."
       },
       "micelio": {
-        "hint": "The network as a platform.",
-        "description": "SaaS for business management with integrated artificial intelligence. Everything you need, in one place."
+        "hint": "The network that connects.",
+        "description": "The network that brings Artificial Intelligence to small and medium businesses. E-commerce, agents, and automation in one platform."
       },
       "austral": {
         "hint": "Build better.",
@@ -228,12 +228,12 @@
   },
   "FAQPage": {
     "backLink": "Back to home",
-    "title": "Frequently Asked Questions about AI Automation",
-    "subtitlePart1": "Everything you need to know about business automation, our process, pricing and technology.",
+    "title": "Frequently Asked Questions - Augment Your Team with AI",
+    "subtitlePart1": "Everything you need to know about augmenting your team, business automation, our process, pricing and technology.",
     "subtitleQuestionsCount": "{count} questions answered",
     "subtitlePart2": "with radical transparency.",
-    "metaTitle": "FAQ - AI Automation | Skywalking.dev",
-    "metaDescription": "Frequently asked questions about AI-driven business automation. Learn about our process, pricing, ROI, technology (n8n, Claude, GPT-4) and how we work with companies in LATAM."
+    "metaTitle": "FAQ - Teams Augmented with AI | Skywalking.dev",
+    "metaDescription": "Frequently asked questions about augmenting teams with AI. Learn about our process, pricing, ROI, technology (n8n, Claude, GPT-4) and how we work with companies in LATAM."
   },
   "FAQFilters": {
     "allLabel": "All"

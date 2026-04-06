@@ -15,7 +15,7 @@ type Props = {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale, slug } = await params
-  const post = getBlogPostBySlug(slug)
+  const post = getBlogPostBySlug(slug, locale)
 
   if (!post) {
     return { title: "Post not found" }
@@ -52,7 +52,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export async function generateStaticParams() {
-  const slugs = getAllBlogSlugs()
+  const slugs = getAllBlogSlugs('en')
   return routing.locales.flatMap((locale) =>
     slugs.map((slug) => ({ locale, slug }))
   )
@@ -61,19 +61,19 @@ export async function generateStaticParams() {
 export default async function BlogPostPage({ params }: Props) {
   const { locale, slug } = await params
   const t = await getTranslations({ locale, namespace: "Blog" })
-  const post = getBlogPostBySlug(slug)
+  const post = getBlogPostBySlug(slug, locale)
 
   if (!post) {
     notFound()
   }
 
   return (
-    <div className="min-h-screen bg-black text-white">
-      <header className="border-b border-white/10">
+    <div className="min-h-screen bg-[var(--sky-white)] text-[var(--sky-black)]">
+      <header className="border-b border-[var(--sky-black)]/10">
         <div className="container mx-auto px-6 py-6 flex items-center gap-4">
           <Link
             href="/blog"
-            className="inline-flex items-center gap-2 text-sm text-white/70 hover:text-white transition-colors"
+            className="inline-flex items-center gap-2 text-sm text-[var(--sky-warm)] hover:text-[var(--sky-black)] transition-colors"
             data-testid="blog-post-back-link"
           >
             <ArrowLeft className="w-4 h-4" aria-hidden="true" />
@@ -83,10 +83,8 @@ export default async function BlogPostPage({ params }: Props) {
       </header>
 
       <main className="container mx-auto px-6 py-16 max-w-3xl">
-        {/* Article header */}
         <header className="mb-12 space-y-6" data-testid="blog-post-header">
-          {/* Date + reading time */}
-          <div className="flex flex-wrap items-center gap-4 text-sm text-[var(--sky-warm)]">
+          <div className="flex flex-wrap items-center gap-4 text-sm text-[var(--sky-warm-dark)]">
             <time dateTime={post.metadata.date}>
               {new Date(post.metadata.date).toLocaleDateString(
                 locale === "es" ? "es-AR" : "en-GB",
@@ -102,40 +100,38 @@ export default async function BlogPostPage({ params }: Props) {
           </div>
 
           <h1
-            className="text-4xl md:text-5xl font-bold text-balance leading-tight"
+            className="text-4xl md:text-5xl font-bold text-[var(--sky-black)] text-balance leading-tight"
             data-testid="blog-post-title"
           >
             {post.metadata.title}
           </h1>
 
           {post.metadata.subtitle && (
-            <p className="text-xl text-[var(--sky-light)] leading-relaxed" data-testid="blog-post-subtitle">
+            <p className="text-xl text-[var(--sky-warm-dark)] leading-relaxed" data-testid="blog-post-subtitle">
               {post.metadata.subtitle}
             </p>
           )}
 
-          {/* Author */}
-          <div className="flex items-center gap-3 pt-2 border-t border-white/10">
+          <div className="flex items-center gap-3 pt-2 border-t border-[var(--sky-black)]/10">
             <div className="w-8 h-8 rounded-full bg-[var(--sky-gold)]/20 border border-[var(--sky-gold)]/30 flex items-center justify-center text-sm font-bold text-[var(--sky-gold)]">
               {post.metadata.author.charAt(0)}
             </div>
             <div>
-              <p className="text-sm font-medium text-white">
+              <p className="text-sm font-medium text-[var(--sky-black)]">
                 {t("writtenBy")} {post.metadata.author}
               </p>
               {post.metadata.author_role && (
-                <p className="text-xs text-[var(--sky-warm)]">{post.metadata.author_role}</p>
+                <p className="text-xs text-[var(--sky-warm-dark)]">{post.metadata.author_role}</p>
               )}
             </div>
           </div>
 
-          {/* Tags */}
           {post.metadata.tags && post.metadata.tags.length > 0 && (
             <div className="flex flex-wrap gap-2" aria-label="Tags">
               {post.metadata.tags.map((tag) => (
                 <span
                   key={tag}
-                  className="inline-flex items-center gap-1 px-3 py-1 bg-[var(--sky-gold)]/10 border border-[var(--sky-gold)]/20 rounded-full text-xs font-medium text-[var(--sky-gold)]"
+                  className="inline-flex items-center gap-1 px-3 py-1 bg-[var(--sky-blue)]/10 border border-[var(--sky-blue)]/20 rounded-full text-xs font-medium text-[var(--sky-blue-dark)]"
                 >
                   <Tag className="w-3 h-3" aria-hidden="true" />
                   {tag}
@@ -145,20 +141,20 @@ export default async function BlogPostPage({ params }: Props) {
           )}
         </header>
 
-        {/* Article content */}
         <article
-          className="prose prose-invert prose-lg max-w-none
-            prose-headings:text-white prose-headings:font-bold
-            prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-4
+          className="prose prose-lg max-w-none
+            prose-headings:text-[var(--sky-black)] prose-headings:font-bold
+            prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-4 prose-h2:text-[var(--sky-blue)]
             prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-3
-            prose-p:text-[var(--sky-light)] prose-p:leading-relaxed
-            prose-a:text-[var(--sky-gold)] prose-a:no-underline hover:prose-a:underline
-            prose-strong:text-white
-            prose-code:text-[var(--sky-gold)] prose-code:bg-[var(--sky-gold)]/10 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:text-sm
-            prose-pre:bg-[#0C1A27] prose-pre:border prose-pre:border-white/10
-            prose-blockquote:border-l-[var(--sky-gold)] prose-blockquote:text-[var(--sky-light)]
-            prose-li:text-[var(--sky-light)]
-            prose-hr:border-white/10"
+            prose-p:text-[var(--sky-black)]/85 prose-p:leading-relaxed
+            prose-a:text-[var(--sky-blue-dark)] prose-a:underline prose-a:decoration-[var(--sky-gold)] hover:prose-a:text-[var(--sky-black)]
+            prose-strong:text-[var(--sky-black)]
+            prose-code:text-[var(--sky-blue-dark)] prose-code:bg-[var(--sky-blue)]/10 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:text-sm
+            prose-pre:bg-[var(--sky-black)] prose-pre:text-[var(--sky-light)] prose-pre:border prose-pre:border-[var(--sky-black)]/10
+            prose-blockquote:border-l-[var(--sky-gold)] prose-blockquote:text-[var(--sky-warm-dark)] prose-blockquote:bg-[var(--sky-gold)]/5 prose-blockquote:py-1 prose-blockquote:rounded-r
+            prose-li:text-[var(--sky-black)]/85
+            prose-hr:border-[var(--sky-black)]/10
+            prose-em:text-[var(--sky-warm-dark)]"
           data-testid="blog-post-content"
         >
           <ReactMarkdown
@@ -169,8 +165,7 @@ export default async function BlogPostPage({ params }: Props) {
           </ReactMarkdown>
         </article>
 
-        {/* Footer nav */}
-        <footer className="mt-16 pt-8 border-t border-white/10">
+        <footer className="mt-16 pt-8 border-t border-[var(--sky-black)]/10">
           <Link
             href="/blog"
             className="inline-flex items-center gap-2 text-sm font-medium text-[var(--sky-gold)] hover:text-[var(--sky-orange)] transition-colors"

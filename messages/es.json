@@ -1,21 +1,21 @@
 {
   "Metadata": {
-    "title": "Skywalking.dev - Automatización Empresarial con IA",
+    "title": "Skywalking.dev - Aumentamos Equipos con IA",
     "titleTemplate": "%s | Skywalking.dev",
-    "description": "Ayudamos a empresas a escalar usando Inteligencia Artificial. Herramientas y soluciones de IA para hacer crecer tu negocio en Argentina y LATAM.",
-    "ogTitle": "Automatización Empresarial con IA | Skywalking.dev",
-    "ogDescription": "Agencia especializada en automatización de procesos con IA. ROI medible en semanas, no meses. PyMEs en Argentina y LATAM.",
-    "twitterTitle": "Skywalking.dev - Automatización Empresarial con IA",
-    "twitterDescription": "Transformamos procesos manuales en sistemas inteligentes 24/7. ROI medible en semanas."
+    "description": "Escalamos empresas con equipos más fuertes, no más grandes. Soluciones de IA que potencian tus personas y aumentan capacidad en Argentina y LATAM.",
+    "ogTitle": "Aumentamos Equipos con IA | Skywalking.dev",
+    "ogDescription": "Aumentamos tu equipo con IA: soluciones de automatización e inteligencia para empresas LATAM. ROI medible en semanas.",
+    "twitterTitle": "Skywalking.dev - Aumentamos Equipos con IA",
+    "twitterDescription": "Potenciamos equipos con IA, no reemplazamos personas. Más fuertes, no más grandes."
   },
   "Header": {
-    "logoAlt": "Skywalking.dev - Automatización Empresarial con IA en Argentina",
+    "logoAlt": "Skywalking.dev - Aumentamos equipos con IA en Argentina",
     "switchLanguage": "Switch to English",
     "currentLanguage": "ES"
   },
   "Hero": {
     "badge": "Skywalking.dev",
-    "imageAlt": "Skywalking.dev - Automatización empresarial con IA en Argentina y LATAM",
+    "imageAlt": "Aumentamos equipos con IA: soluciones de automatización inteligente para empresas en Argentina y LATAM",
     "heading": "Aumentamos equipos",
     "headingHighlight": "con IA",
     "subtitle": "Soluciones para escalar empresas con equipos más fuertes, no más grandes.",
@@ -149,8 +149,8 @@
         "description": "Sistema de alerta temprana de incendios forestales. Monitoreo en tiempo real para proteger la Patagonia."
       },
       "micelio": {
-        "hint": "La red como plataforma.",
-        "description": "SaaS para gestión empresarial con inteligencia artificial integrada. Todo lo que necesitas, en un solo lugar."
+        "hint": "La red que conecta.",
+        "description": "La red que acerca la Inteligencia Artificial a pequeños y medianos negocios. E-commerce, agentes y automatización en una sola plataforma."
       },
       "austral": {
         "hint": "Construir mejor.",
@@ -228,12 +228,12 @@
   },
   "FAQPage": {
     "backLink": "Volver al inicio",
-    "title": "Preguntas Frecuentes sobre Automatización con IA",
-    "subtitlePart1": "Todo lo que necesitas saber sobre automatización empresarial, nuestro proceso, pricing y tecnología.",
+    "title": "Preguntas Frecuentes - Aumenta tu Equipo con IA",
+    "subtitlePart1": "Todo lo que necesitas saber sobre cómo aumentar tu equipo, automatización empresarial, nuestro proceso, pricing y tecnología.",
     "subtitleQuestionsCount": "{count} preguntas respondidas",
     "subtitlePart2": "con transparencia brutal.",
-    "metaTitle": "FAQ - Automatización con IA | Skywalking.dev",
-    "metaDescription": "Preguntas frecuentes sobre automatización empresarial con IA. Descubre nuestro proceso, pricing, ROI, tecnología (n8n, Claude, GPT-4) y cómo trabajamos con empresas en LATAM."
+    "metaTitle": "FAQ - Equipos Aumentados con IA | Skywalking.dev",
+    "metaDescription": "Preguntas frecuentes sobre cómo aumentar equipos con IA. Descubre nuestro proceso, pricing, ROI, tecnología (n8n, Claude, GPT-4) y cómo trabajamos con empresas en LATAM."
   },
   "FAQFilters": {
     "allLabel": "Todas"
