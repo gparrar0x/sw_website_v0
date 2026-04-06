@@ -19,42 +19,48 @@ export interface BlogPost {
   slug: string
 }
 
-const blogDirectory = path.join(process.cwd(), 'public/blog')
-
-export function getBlogPostBySlug(slug: string): BlogPost | null {
-  try {
-    const fullPath = path.join(blogDirectory, `${slug}.md`)
-    const fileContents = fs.readFileSync(fullPath, 'utf8')
-    const { data, content } = matter(fileContents)
-
-    return {
-      metadata: data as BlogPostMetadata,
-      content,
-      slug,
-    }
-  } catch {
-    return null
-  }
+function blogDir(locale: string): string {
+  return path.join(process.cwd(), 'public/blog', locale)
 }
 
-export function getAllBlogSlugs(): string[] {
-  try {
-    if (!fs.existsSync(blogDirectory)) {
-      return []
-    }
-    const files = fs.readdirSync(blogDirectory)
-    return files
-      .filter((file) => file.endsWith('.md'))
-      .map((file) => file.replace(/\.md$/, ''))
-  } catch {
-    return []
-  }
+function fallbackLocale(locale: string): string {
+  return locale === 'es' ? 'en' : 'es'
 }
 
-export function getAllBlogPosts(): BlogPost[] {
-  const slugs = getAllBlogSlugs()
+export function getBlogPostBySlug(slug: string, locale = 'en'): BlogPost | null {
+  for (const loc of [locale, fallbackLocale(locale)]) {
+    try {
+      const fullPath = path.join(blogDir(loc), `${slug}.md`)
+      const fileContents = fs.readFileSync(fullPath, 'utf8')
+      const { data, content } = matter(fileContents)
+      return { metadata: data as BlogPostMetadata, content, slug }
+    } catch {
+      continue
+    }
+  }
+  return null
+}
+
+export function getAllBlogSlugs(locale = 'en'): string[] {
+  const slugs = new Set<string>()
+  for (const loc of [locale, fallbackLocale(locale)]) {
+    try {
+      const dir = blogDir(loc)
+      if (!fs.existsSync(dir)) continue
+      for (const file of fs.readdirSync(dir)) {
+        if (file.endsWith('.md')) slugs.add(file.replace(/\.md$/, ''))
+      }
+    } catch {
+      continue
+    }
+  }
+  return Array.from(slugs)
+}
+
+export function getAllBlogPosts(locale = 'en'): BlogPost[] {
+  const slugs = getAllBlogSlugs(locale)
   return slugs
-    .map((slug) => getBlogPostBySlug(slug))
+    .map((slug) => getBlogPostBySlug(slug, locale))
     .filter((p): p is BlogPost => p !== null)
     .sort((a, b) => new Date(b.metadata.date).getTime() - new Date(a.metadata.date).getTime())
 }

@@ -17,8 +17,10 @@
 
   /* Extended Base (nuevos - profesionalismo técnico) */
   --sky-blue: #5F7382;          /* Azul-gris - Color marca profesional */
+  --sky-blue-dark: #435563;     /* Azul oscuro - Links/tags sobre fondo claro (WCAG AA) */
   --sky-light: #B4C3CD;         /* Azul claro - Fondos sutiles */
-  --sky-warm: #918778;          /* Tierra - Contraste cálido, texto secundario */
+  --sky-warm: #918778;          /* Tierra - Contraste cálido, solo sobre fondo oscuro */
+  --sky-warm-dark: #5E5145;     /* Tierra oscuro - Texto secundario sobre fondo claro (WCAG AA) */
 
   /* Action Accents (nuevos - conversión optimizada) */
   --sky-gold: #E8C547;          /* Dorado brillante - Premium, CTAs primarios (upgraded from #D4AF37 for contrast) */

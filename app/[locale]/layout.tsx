@@ -24,16 +24,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     description: t("description"),
     keywords: [
-      "escalar negocio con IA",
-      "inteligencia artificial para empresas",
-      "herramientas IA empresariales",
+      "equipos con IA",
+      "aumentar equipos inteligencia artificial",
+      "escalar sin contratar",
       "agentes AI personalizados",
-      "automatización n8n",
-      "transformación digital",
+      "automatización empresarial",
+      "transformación digital IA",
       "chatbots inteligentes",
       "consultoría IA argentina",
       "software con IA",
-      "crecimiento empresarial IA",
+      "augment teams AI",
     ],
     openGraph: {
       type: "website",
@@ -133,7 +133,7 @@ export default async function LocaleLayout({ children, params }: Props) {
         availableLanguage: ["es", "en"],
       },
     ],
-    description: "Agencia de automatización empresarial con IA en Argentina y LATAM",
+    description: "Aumentamos equipos con IA para empresas en Argentina y LATAM",
   }
 
   const localBusinessSchema = {
