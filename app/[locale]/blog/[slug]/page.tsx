@@ -144,10 +144,10 @@ export default async function BlogPostPage({ params }: Props) {
         <article
           className="prose prose-lg max-w-none
             prose-headings:text-[var(--sky-black)] prose-headings:font-bold
-            prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-4 prose-h2:text-[var(--sky-blue)]
-            prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-3
+            prose-h2:text-2xl prose-h2:mt-12 prose-h2:mb-4 prose-h2:text-[var(--sky-blue-dark)] prose-h2:border-b prose-h2:border-[var(--sky-gold)]/30 prose-h2:pb-2
+            prose-h3:text-lg prose-h3:mt-8 prose-h3:mb-3 prose-h3:text-[var(--sky-blue-dark)]
             prose-p:text-[var(--sky-black)]/85 prose-p:leading-relaxed
-            prose-a:text-[var(--sky-blue-dark)] prose-a:underline prose-a:decoration-[var(--sky-gold)] hover:prose-a:text-[var(--sky-black)]
+            prose-a:text-[var(--sky-blue-dark)] prose-a:underline prose-a:decoration-[var(--sky-blue-dark)]/40 prose-a:underline-offset-2 hover:prose-a:decoration-[var(--sky-gold)] hover:prose-a:text-[var(--sky-black)]
             prose-strong:text-[var(--sky-black)]
             prose-code:text-[var(--sky-blue-dark)] prose-code:bg-[var(--sky-blue)]/10 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:text-sm
             prose-pre:bg-[var(--sky-black)] prose-pre:text-[var(--sky-light)] prose-pre:border prose-pre:border-[var(--sky-black)]/10
