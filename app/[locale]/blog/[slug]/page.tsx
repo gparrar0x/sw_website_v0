@@ -113,9 +113,11 @@ export default async function BlogPostPage({ params }: Props) {
           )}
 
           <div className="flex items-center gap-3 pt-2 border-t border-[var(--sky-black)]/10">
-            <div className="w-8 h-8 rounded-full bg-[var(--sky-gold)]/20 border border-[var(--sky-gold)]/30 flex items-center justify-center text-sm font-bold text-[var(--sky-gold)]">
-              {post.metadata.author.charAt(0)}
-            </div>
+            <img
+              src="/mentat-avatar.png"
+              alt={post.metadata.author}
+              className="w-8 h-8 rounded-full object-cover"
+            />
             <div>
               <p className="text-sm font-medium text-[var(--sky-black)]">
                 {t("writtenBy")} {post.metadata.author}
