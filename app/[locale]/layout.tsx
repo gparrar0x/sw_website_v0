@@ -59,7 +59,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       images: ["/og-image.png"],
     },
     verification: {
-      google: "zjhch1wCkBgH8UE--gFAgITii-LwC7Y8JeVfBHCsFcM",
+      google: "v3dO9t2KZ411Fzz6L-zsudTwAJIy3GgCTopbhCI36vY",
     },
     robots: {
       index: true,

@@ -86,7 +86,7 @@ export default async function BlogPage({ params }: Props) {
                 </h2>
 
                 {post.metadata.subtitle && (
-                  <p className="text-[var(--sky-warm-dark)] mb-4 leading-relaxed">
+                  <p className="text-[var(--sky-blue-dark)] mb-4 leading-relaxed italic">
                     {post.metadata.subtitle}
                   </p>
                 )}

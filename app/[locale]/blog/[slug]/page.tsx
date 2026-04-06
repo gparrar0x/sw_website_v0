@@ -107,7 +107,7 @@ export default async function BlogPostPage({ params }: Props) {
           </h1>
 
           {post.metadata.subtitle && (
-            <p className="text-xl text-[var(--sky-warm-dark)] leading-relaxed" data-testid="blog-post-subtitle">
+            <p className="text-xl text-[var(--sky-blue-dark)] leading-relaxed italic" data-testid="blog-post-subtitle">
               {post.metadata.subtitle}
             </p>
           )}
@@ -150,7 +150,7 @@ export default async function BlogPostPage({ params }: Props) {
             prose-h3:text-lg prose-h3:mt-8 prose-h3:mb-3 prose-h3:text-[var(--sky-blue-dark)]
             prose-p:text-[var(--sky-black)]/85 prose-p:leading-relaxed
             prose-a:text-[#2563EB] prose-a:underline prose-a:decoration-[#2563EB]/40 prose-a:underline-offset-2 hover:prose-a:decoration-[#2563EB] hover:prose-a:text-[#1D4ED8]
-            prose-strong:text-[var(--sky-black)]
+            prose-strong:text-[var(--sky-blue-dark)] prose-strong:font-bold
             prose-code:text-[var(--sky-blue-dark)] prose-code:bg-[var(--sky-blue)]/10 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:text-sm
             prose-pre:bg-[var(--sky-black)] prose-pre:text-[var(--sky-light)] prose-pre:border prose-pre:border-[var(--sky-black)]/10
             prose-blockquote:border-l-[var(--sky-gold)] prose-blockquote:text-[var(--sky-warm-dark)] prose-blockquote:bg-[var(--sky-gold)]/5 prose-blockquote:py-1 prose-blockquote:rounded-r
@@ -162,6 +162,23 @@ export default async function BlogPostPage({ params }: Props) {
           <ReactMarkdown
             remarkPlugins={[remarkGfm]}
             rehypePlugins={[rehypeRaw]}
+            components={{
+              h2: ({ children }) => (
+                <h2 className="text-2xl font-bold mt-12 mb-4 pb-2 border-b border-[var(--sky-gold)]/30" style={{ color: '#435563' }}>
+                  {children}
+                </h2>
+              ),
+              h3: ({ children }) => (
+                <h3 className="text-lg font-bold mt-8 mb-3" style={{ color: '#435563' }}>
+                  {children}
+                </h3>
+              ),
+              a: ({ href, children }) => (
+                <a href={href} target="_blank" rel="noopener noreferrer" style={{ color: '#2563EB', textDecoration: 'underline', textUnderlineOffset: '3px' }}>
+                  {children}<span style={{ fontSize: '0.75em', marginLeft: '2px' }}> ↗</span>
+                </a>
+              ),
+            }}
           >
             {post.content}
           </ReactMarkdown>
