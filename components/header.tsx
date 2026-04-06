@@ -26,9 +26,10 @@ export function Header() {
         <Image
           src="/logo-3d.png"
           alt={t("logoAlt")}
-          width={48}
-          height={48}
-          className="rounded-full hover:scale-110 transition-transform duration-300"
+          width={40}
+          height={40}
+          className="rounded-full hover:scale-110 transition-transform duration-300 shadow-md"
+          style={{ clipPath: "circle(45%)" }}
           priority
         />
       </Link>
