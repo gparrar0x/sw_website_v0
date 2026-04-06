@@ -258,7 +258,8 @@
     "readingTime": "{time} read",
     "noPostsFound": "No posts available.",
     "by": "by",
-    "writtenBy": "Written by"
+    "writtenBy": "Written by",
+    "readMore": "Read more"
   },
   "Navigation": {
     "home": "Home",
