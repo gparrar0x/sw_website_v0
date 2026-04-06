@@ -6,6 +6,7 @@ import type { FAQCategoryData } from '@/lib/faq-data'
 import { FAQCategory } from '@/components/faq/faq-category'
 import { FAQSearch } from '@/components/faq/faq-search'
 import { FAQFilters, FAQFilter } from '@/components/faq/faq-filters'
+import { useTranslations } from 'next-intl'
 
 const iconMap = {
   Sparkles: <Sparkles className="w-6 h-6 text-[#D4AF37]" />,
@@ -23,21 +24,15 @@ const filterIconMap = {
   Shield: <Shield className="w-5 h-5" />,
 } as const
 
-const filterLabels: Record<string, string> = {
-  general: 'General',
-  servicios: 'Servicios',
-  pricing: 'Precios & ROI',
-  proceso: 'Proceso',
-  tecnica: 'Técnica',
-}
-
 export function FAQClientWrapper({ data }: { data: FAQCategoryData[] }) {
   const [searchQuery, setSearchQuery] = useState('')
   const [activeFilter, setActiveFilter] = useState<string | null>(null)
+  const tSearch = useTranslations('FAQSearch')
+  const tFilters = useTranslations('FAQFilters')
 
   const filters: FAQFilter[] = data.map((cat) => ({
     id: cat.id,
-    label: filterLabels[cat.id] || cat.title,
+    label: cat.title,
     icon: filterIconMap[cat.iconName],
   }))
 
@@ -68,7 +63,12 @@ export function FAQClientWrapper({ data }: { data: FAQCategoryData[] }) {
     <>
       {/* Search */}
       <div className="mb-12">
-        <FAQSearch onSearch={setSearchQuery} />
+        <FAQSearch
+          onSearch={setSearchQuery}
+          placeholder={tSearch('placeholder')}
+          ariaLabel={tSearch('ariaLabel')}
+          clearAriaLabel={tSearch('clearAriaLabel')}
+        />
       </div>
 
       {/* Filters */}
@@ -77,6 +77,7 @@ export function FAQClientWrapper({ data }: { data: FAQCategoryData[] }) {
           filters={filters}
           activeFilter={activeFilter}
           onFilterChange={setActiveFilter}
+          allLabel={tFilters('allLabel')}
         />
       </div>
 
@@ -84,8 +85,8 @@ export function FAQClientWrapper({ data }: { data: FAQCategoryData[] }) {
       {searchQuery && (
         <div className="mb-8 text-center">
           <p className="text-[#B4C3CD]">
-            {filteredData.reduce((acc, cat) => acc + cat.faqs.length, 0)} resultados para "
-            <span className="text-white font-semibold">{searchQuery}</span>"
+            {filteredData.reduce((acc, cat) => acc + cat.faqs.length, 0)} resultados para &ldquo;
+            <span className="text-white font-semibold">{searchQuery}</span>&rdquo;
           </p>
         </div>
       )}

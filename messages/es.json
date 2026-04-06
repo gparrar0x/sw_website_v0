@@ -1,0 +1,270 @@
+{
+  "Metadata": {
+    "title": "Skywalking.dev - Automatización Empresarial con IA",
+    "titleTemplate": "%s | Skywalking.dev",
+    "description": "Ayudamos a empresas a escalar usando Inteligencia Artificial. Herramientas y soluciones de IA para hacer crecer tu negocio en Argentina y LATAM.",
+    "ogTitle": "Automatización Empresarial con IA | Skywalking.dev",
+    "ogDescription": "Agencia especializada en automatización de procesos con IA. ROI medible en semanas, no meses. PyMEs en Argentina y LATAM.",
+    "twitterTitle": "Skywalking.dev - Automatización Empresarial con IA",
+    "twitterDescription": "Transformamos procesos manuales en sistemas inteligentes 24/7. ROI medible en semanas."
+  },
+  "Header": {
+    "logoAlt": "Skywalking.dev - Automatización Empresarial con IA en Argentina",
+    "switchLanguage": "Switch to English",
+    "currentLanguage": "ES"
+  },
+  "Hero": {
+    "badge": "Skywalking.dev",
+    "imageAlt": "Skywalking.dev - Automatización empresarial con IA en Argentina y LATAM",
+    "heading": "Aumentamos equipos",
+    "headingHighlight": "con IA",
+    "subtitle": "Soluciones para escalar empresas con equipos más fuertes, no más grandes.",
+    "cta": "Descubre cómo"
+  },
+  "Services": {
+    "solutionsTitle": "Nuestras Soluciones",
+    "solutionsSubtitle": "Nos especializamos en herramientas para tu negocio.",
+    "audienceTitle": "A quién servimos",
+    "audienceSubtitle": "Soluciones diseñadas para empresas LATAM en crecimiento (10-500 empleados)",
+    "audiences": {
+      "solo": {
+        "title": "Empresas Unipersonales",
+        "description": "Automatiza tareas repetitivas, libera tiempo para lo estratégico"
+      },
+      "small": {
+        "title": "Pequeñas Empresas",
+        "description": "Opera 24/7 sin contratar equipo completo (bots, e-commerce, gestión)"
+      },
+      "medium": {
+        "title": "Medianas Empresas",
+        "description": "Escala operaciones sin crecimiento lineal de costos"
+      },
+      "large": {
+        "title": "Grandes Corporaciones",
+        "description": "Optimiza procesos existentes, integra sistemas legacy con IA moderna"
+      }
+    },
+    "solutions": {
+      "agents": {
+        "title": "Agentes AI Personalizados",
+        "subtitle": "Asistentes inteligentes que entienden tu negocio",
+        "features": [
+          "Chatbots que atienden clientes 24/7 en español",
+          "Agentes que consultan tu base de datos y responden en lenguaje natural",
+          "Análisis automático de llamadas de venta: qué funcionó, qué no"
+        ]
+      },
+      "automation": {
+        "title": "Automatización de Procesos Complejos",
+        "subtitle": "Flujos inteligentes que conectan todos tus sistemas",
+        "features": [
+          "Integración entre WhatsApp, email, CRM y tus herramientas actuales",
+          "Lee e interpreta facturas, contratos y reportes en PDF automáticamente",
+          "Monitoreo de precios de competencia actualizado sin intervención manual"
+        ]
+      },
+      "software": {
+        "title": "Transformación Digital y Software a Medida",
+        "subtitle": "De procesos manuales a sistemas inteligentes personalizados",
+        "features": [
+          "Desarrollo de software específico para tu negocio",
+          "Análisis y mapeo de procesos actuales",
+          "Diseño de arquitectura automatizada",
+          "Implementación por fases (2 semanas c/u)",
+          "Capacitación y transferencia de conocimiento"
+        ]
+      }
+    }
+  },
+  "Capabilities": {
+    "title": "Qué puede hacer tu empresa con IA",
+    "subtitle": "Capacidades concretas que eliminan trabajo manual y generan resultados medibles.",
+    "items": {
+      "documents": {
+        "task": "Lectura de documentos",
+        "description": "Facturas, contratos y reportes procesados sin operador de carga",
+        "impact": "500+ documentos/mes sin intervención manual"
+      },
+      "meetings": {
+        "task": "Transcripción de reuniones",
+        "description": "Reuniones de 90 minutos convertidas en actas procesables",
+        "impact": "De 90 min a resumen accionable en 3 min"
+      },
+      "monitoring": {
+        "task": "Monitoreo de competencia",
+        "description": "Precios, contenido y movimientos de mercado rastreados automáticamente",
+        "impact": "Actualización continua sin scraping manual"
+      },
+      "content": {
+        "task": "Generación de contenido visual",
+        "description": "Assets de marca, mockups y material de marketing generados con IA",
+        "impact": "De briefing a entregable en minutos"
+      },
+      "research": {
+        "task": "Investigación de mercado",
+        "description": "Análisis competitivo, tendencias y oportunidades con datos en tiempo real",
+        "impact": "Decisiones informadas sin semanas de research"
+      },
+      "web": {
+        "task": "Automatización web",
+        "description": "Tareas repetitivas en plataformas web ejecutadas sin intervención humana",
+        "impact": "Procesos manuales eliminados por completo"
+      }
+    }
+  },
+  "WhyUs": {
+    "title": "Por qué Skywalking",
+    "subtitle": "Tecnología que potencia personas, no las reemplaza. Resultados medibles, arquitectura probada.",
+    "reasons": {
+      "speed": {
+        "title": "Velocidad sobre perfección",
+        "description": "Implementaciones incrementales con ROI medible en semanas, no meses. Menos código, más valor."
+      },
+      "simple": {
+        "title": "Soluciones simples, resultados reales",
+        "description": "Usamos lo que ya funciona. Herramientas probadas, sin complejidad innecesaria. Menos código, menos problemas."
+      },
+      "people": {
+        "title": "Tecnología potencia personas",
+        "description": "Software escrito con IA, diseñado y probado por humanos. Aumentamos las capacidades de las personas de tu equipo."
+      }
+    }
+  },
+  "ProjectsPreview": {
+    "label": "En construcción",
+    "title": "Lo que estamos armando",
+    "statusActive": "Activo",
+    "statusDev": "En desarrollo",
+    "projects": {
+      "eterhabitats": {
+        "hint": "Construir donde otros no llegan.",
+        "description": "Construcción sostenible en Patagonia. Containers reciclados, aislación con lana de oveja, materiales locales. Presupuestos interactivos y planos técnicos."
+      },
+      "kronos": {
+        "hint": "Cada gramo cuenta.",
+        "description": "Sistema de monitoreo de pesajes industriales. Salud de dispositivos, alertas, diagnóstico remoto. Múltiples sedes en un mismo sistema."
+      },
+      "igni": {
+        "hint": "Cuando el bosque habla, hay que escuchar.",
+        "description": "Sistema de alerta temprana de incendios forestales. Monitoreo en tiempo real para proteger la Patagonia."
+      },
+      "micelio": {
+        "hint": "La red como plataforma.",
+        "description": "SaaS para gestión empresarial con inteligencia artificial integrada. Todo lo que necesitas, en un solo lugar."
+      },
+      "austral": {
+        "hint": "Construir mejor.",
+        "description": "Plataforma para la industria de la construcción y materiales. Presupuestos, stock, proveedores."
+      }
+    }
+  },
+  "Testimonials": {
+    "title": "Lo que dicen nuestros clientes",
+    "subtitle": "Resultados reales de empresas que ya automatizan con IA",
+    "ctaQuestion": "¿Querés resultados como estos en tu empresa?",
+    "ctaButton": "Hablemos de tu proyecto",
+    "items": {
+      "maria": {
+        "quote": "Skywalking transformó completamente nuestra operación. Lo que antes tomaba 40 horas semanales ahora se hace automáticamente.",
+        "result": "40h ahorradas/semana",
+        "role": "CEO",
+        "at": "en"
+      },
+      "carlos": {
+        "quote": "La automatización con IA nos permitió escalar sin contratar más personal. ROI en 3 meses.",
+        "result": "3x capacidad operativa",
+        "role": "CTO",
+        "at": "en"
+      },
+      "ana": {
+        "quote": "Implementaron un sistema que opera 24/7. Nuestros clientes reciben respuestas instantáneas incluso fuera de horario.",
+        "result": "95% satisfacción cliente",
+        "role": "Gerente Comercial",
+        "at": "en"
+      }
+    }
+  },
+  "Results": {
+    "title": "Portfolio probado en producción",
+    "subtitle": "Soluciones reales, funcionando hoy en empresas de múltiples sectores.",
+    "metrics": {
+      "projects": "Proyectos activos en producción",
+      "prd": "Cobertura PRD completa",
+      "verticals": "Verticales de industria (Health, Food, Automation, FinTech)",
+      "ops": "Operación automatizada continua"
+    }
+  },
+  "ContactForm": {
+    "title": "Hablemos de tu proyecto",
+    "subtitle": "Cuéntanos cómo podemos ayudarte a transformar tu negocio con IA",
+    "nameLabel": "Nombre completo",
+    "namePlaceholder": "Juan Pérez",
+    "emailLabel": "Email",
+    "emailPlaceholder": "juan@empresa.com",
+    "whatsappLabel": "WhatsApp (con código de país)",
+    "whatsappPlaceholder": "+54 9 11 1234-5678",
+    "messageLabel": "Cuéntanos más sobre tu desafío",
+    "messagePlaceholder": "Describe brevemente el proceso que quieres automatizar y cuál es tu principal dolor actual...",
+    "submit": "Agendar Consulta Gratuita",
+    "submitting": "Enviando...",
+    "successMessage": "Mensaje enviado. Te contactaremos pronto.",
+    "errorMessage": "Hubo un error. Por favor intenta nuevamente."
+  },
+  "Footer": {
+    "tagline": "Software escrito con IA, diseñado y probado por humanos.",
+    "officesTitle": "Oficinas",
+    "office1": "San Martín de los Andes, Argentina",
+    "office2": "Cali, Colombia",
+    "contactTitle": "Contacto",
+    "emailAriaLabel": "Email",
+    "whatsappAriaLabel": "WhatsApp",
+    "rights": "Todos los derechos reservados.",
+    "slogan": "Caminos con ❤️ para empresas que piensan en grande."
+  },
+  "WhatsAppButton": {
+    "message": "Hola! Tengo un proyecto que me gustaría discutir con ustedes",
+    "ariaLabel": "Contactar por WhatsApp",
+    "tooltip": "Chatea con nosotros"
+  },
+  "FAQPage": {
+    "backLink": "Volver al inicio",
+    "title": "Preguntas Frecuentes sobre Automatización con IA",
+    "subtitlePart1": "Todo lo que necesitas saber sobre automatización empresarial, nuestro proceso, pricing y tecnología.",
+    "subtitleQuestionsCount": "{count} preguntas respondidas",
+    "subtitlePart2": "con transparencia brutal.",
+    "metaTitle": "FAQ - Automatización con IA | Skywalking.dev",
+    "metaDescription": "Preguntas frecuentes sobre automatización empresarial con IA. Descubre nuestro proceso, pricing, ROI, tecnología (n8n, Claude, GPT-4) y cómo trabajamos con empresas en LATAM."
+  },
+  "FAQFilters": {
+    "allLabel": "Todas"
+  },
+  "FAQSearch": {
+    "placeholder": "Buscar preguntas...",
+    "ariaLabel": "Buscar preguntas frecuentes",
+    "clearAriaLabel": "Limpiar búsqueda"
+  },
+  "FAQCTA": {
+    "title": "No encontraste lo que buscabas?",
+    "subtitle": "Hablemos. Nuestro equipo está listo para responder tus preguntas específicas y diseñar una solución a medida.",
+    "scheduleButton": "Agendar Reunión",
+    "whatsappButton": "Escribir por WhatsApp",
+    "whatsappAriaLabel": "Escribir por WhatsApp (abre en nueva ventana)"
+  },
+  "Blog": {
+    "title": "Blog",
+    "subtitle": "Reflexiones desde dentro del sistema.",
+    "backLink": "Volver al inicio",
+    "backToBlog": "Volver al blog",
+    "readingTime": "{time} de lectura",
+    "noPostsFound": "No hay posts disponibles.",
+    "by": "por",
+    "writtenBy": "Escrito por"
+  },
+  "Navigation": {
+    "home": "Inicio",
+    "faq": "Preguntas Frecuentes",
+    "blog": "Blog",
+    "hive": "Hive",
+    "skipToContent": "Saltar al contenido principal"
+  }
+}

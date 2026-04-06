@@ -9,7 +9,7 @@ export default function robots(): MetadataRoute.Robots {
         disallow: [
           '/api/',
           '/_next/',
-          '/cliente/', // Páginas privadas
+          '/*/*/presupuesto/', // Private budget pages
         ],
       },
     ],

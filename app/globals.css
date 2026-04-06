@@ -21,7 +21,7 @@
   --sky-warm: #918778;          /* Tierra - Contraste cálido, texto secundario */
 
   /* Action Accents (nuevos - conversión optimizada) */
-  --sky-gold: #D4AF37;          /* Dorado - Premium, CTAs primarios */
+  --sky-gold: #E8C547;          /* Dorado brillante - Premium, CTAs primarios (upgraded from #D4AF37 for contrast) */
   --sky-orange: #E8833A;        /* Naranja - Energía, urgencia, hovers */
   --sky-red: #E74C3C;           /* Rojo - Alertas, acciones críticas */
 
@@ -171,6 +171,51 @@
   h1, h2, h3, h4 {
     font-family: var(--font-heading), "Plus Jakarta Sans", sans-serif;
     @apply font-bold;
+  }
+
+  /* Accessible focus-visible for all interactive elements */
+  :focus-visible {
+    outline: 2px solid var(--sky-gold);
+    outline-offset: 2px;
+  }
+
+  /* Skip to content link */
+  .skip-to-content {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    z-index: 100;
+    padding: 0.5rem 1rem;
+    background: var(--sky-gold);
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .skip-to-content:focus {
+    left: 0;
+  }
+
+  /* Visually hidden but accessible */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+
+  /* Reduced motion preference */
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
   }
 }
 

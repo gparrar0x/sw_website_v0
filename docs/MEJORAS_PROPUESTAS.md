@@ -501,7 +501,7 @@ Agregar colores de accent por proyecto:
 ```typescript
 const projects = [
   {
-    name: "Miicel",
+    name: "Micelio",
     color: "#D4AF37", // gold
     image: "...",
     features: ["Gestión empresarial", "IA integrada", "Dashboard intuitivo"],
