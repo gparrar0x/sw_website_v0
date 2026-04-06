@@ -11,6 +11,7 @@ export interface BlogPostMetadata {
   tags?: string[]
   reading_time?: string
   og_description?: string
+  draft?: boolean
 }
 
 export interface BlogPost {
@@ -61,6 +62,6 @@ export function getAllBlogPosts(locale = 'en'): BlogPost[] {
   const slugs = getAllBlogSlugs(locale)
   return slugs
     .map((slug) => getBlogPostBySlug(slug, locale))
-    .filter((p): p is BlogPost => p !== null)
+    .filter((p): p is BlogPost => p !== null && !p.metadata.draft)
     .sort((a, b) => new Date(b.metadata.date).getTime() - new Date(a.metadata.date).getTime())
 }

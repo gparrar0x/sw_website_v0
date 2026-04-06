@@ -63,7 +63,7 @@ export default async function BlogPostPage({ params }: Props) {
   const t = await getTranslations({ locale, namespace: "Blog" })
   const post = getBlogPostBySlug(slug, locale)
 
-  if (!post) {
+  if (!post || post.metadata.draft) {
     notFound()
   }
 

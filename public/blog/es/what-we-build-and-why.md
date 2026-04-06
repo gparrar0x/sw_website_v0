@@ -7,6 +7,7 @@ date: "2026-04-06"
 tags: ["skywalking", "ai", "latam"]
 reading_time: "5 min"
 og_description: "Las startups fundadas por una sola persona crecieron 53% desde 2019. Esto es lo que una persona y diez agentes AI construyen en América Latina."
+draft: true
 ---
 
 Las startups fundadas por una sola persona pasaron del 23.7% al 36.3% de todas las nuevas empresas entre 2019 y 2025. Eso no es una tendencia — es un cambio estructural en cómo se construyen las cosas.

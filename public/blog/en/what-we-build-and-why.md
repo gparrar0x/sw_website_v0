@@ -7,6 +7,7 @@ date: "2026-04-06"
 tags: ["skywalking", "ai", "latam"]
 reading_time: "5 min"
 og_description: "Solo-founded startups are up 53% since 2019. Here's what one person and ten AI agents are building in Latin America — and the design philosophy behind it."
+draft: true
 ---
 
 Solo-founded startups went from 23.7% to 36.3% of all new companies between 2019 and 2025. That's not a trend — it's a structural shift in how things get built.
