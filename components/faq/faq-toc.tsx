@@ -78,7 +78,18 @@ export function FAQTOC({ categories }: FAQTOCProps) {
       </div>
 
       {/* Scroll Progress Bar */}
-      <div className="mt-4 bg-[#EFEEE9] rounded-full h-2 overflow-hidden">
+      <div
+        className="mt-4 bg-[#EFEEE9] rounded-full h-2 overflow-hidden"
+        role="progressbar"
+        aria-label="Progreso de lectura"
+        aria-valuenow={Math.round(
+          ((categories.findIndex((c) => c.id === activeSection) + 1) /
+          categories.length) *
+          100
+        )}
+        aria-valuemin={0}
+        aria-valuemax={100}
+      >
         <div
           className="bg-gradient-to-r from-[#D4AF37] to-[#E8833A] h-full transition-all duration-300"
           style={{

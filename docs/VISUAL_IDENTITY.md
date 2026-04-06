@@ -244,7 +244,7 @@ Hover effect: scale (transform) + color shift. Small but present. **Good.**
 ### Project Images
 
 Located: `/public/projects/`
-- `miicel.webp` — SaaS interface mockup
+- `micelio.webp` — SaaS interface mockup
 - `fuego.webp` — Fire/forest visualization
 - `austral.webp` — Construction interface
 - `kronos.webp` — Calendar/time interface

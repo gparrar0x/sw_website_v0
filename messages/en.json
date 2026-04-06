@@ -1,0 +1,270 @@
+{
+  "Metadata": {
+    "title": "Skywalking.dev - AI-Powered Business Automation",
+    "titleTemplate": "%s | Skywalking.dev",
+    "description": "We help businesses scale using Artificial Intelligence. AI tools and solutions to grow your company across LATAM and beyond.",
+    "ogTitle": "AI Business Automation | Skywalking.dev",
+    "ogDescription": "Boutique agency specialising in AI-driven process automation. Measurable ROI in weeks, not months. SMEs across LATAM.",
+    "twitterTitle": "Skywalking.dev - AI-Powered Business Automation",
+    "twitterDescription": "We turn manual processes into intelligent 24/7 systems. Measurable ROI in weeks."
+  },
+  "Header": {
+    "logoAlt": "Skywalking.dev - AI Business Automation",
+    "switchLanguage": "Cambiar a Español",
+    "currentLanguage": "EN"
+  },
+  "Hero": {
+    "badge": "Skywalking.dev",
+    "imageAlt": "Skywalking.dev - AI business automation for LATAM companies",
+    "heading": "We augment teams",
+    "headingHighlight": "with AI",
+    "subtitle": "Solutions to scale companies with stronger teams, not bigger ones.",
+    "cta": "See how"
+  },
+  "Services": {
+    "solutionsTitle": "Our Solutions",
+    "solutionsSubtitle": "We specialise in tools built for your business.",
+    "audienceTitle": "Who We Serve",
+    "audienceSubtitle": "Solutions designed for growing LATAM businesses (10-500 employees)",
+    "audiences": {
+      "solo": {
+        "title": "Solo Businesses",
+        "description": "Automate repetitive tasks, free up time for strategic work"
+      },
+      "small": {
+        "title": "Small Businesses",
+        "description": "Operate 24/7 without hiring a full team (bots, e-commerce, management)"
+      },
+      "medium": {
+        "title": "Mid-Sized Companies",
+        "description": "Scale operations without linear cost growth"
+      },
+      "large": {
+        "title": "Large Corporations",
+        "description": "Optimise existing processes, integrate legacy systems with modern AI"
+      }
+    },
+    "solutions": {
+      "agents": {
+        "title": "Custom AI Agents",
+        "subtitle": "Intelligent assistants that understand your business",
+        "features": [
+          "Chatbots serving customers 24/7 in their language",
+          "Agents that query your database and answer in natural language",
+          "Automatic sales call analysis: what worked, what didn't"
+        ]
+      },
+      "automation": {
+        "title": "Complex Process Automation",
+        "subtitle": "Intelligent workflows connecting all your systems",
+        "features": [
+          "Integration across WhatsApp, email, CRM, and your current tools",
+          "Reads and interprets invoices, contracts, and PDF reports automatically",
+          "Competitor price monitoring updated without manual scraping"
+        ]
+      },
+      "software": {
+        "title": "Digital Transformation & Custom Software",
+        "subtitle": "From manual processes to personalised intelligent systems",
+        "features": [
+          "Software development tailored to your business",
+          "Analysis and mapping of current processes",
+          "Automated architecture design",
+          "Phase-based implementation (2 weeks each)",
+          "Training and knowledge transfer"
+        ]
+      }
+    }
+  },
+  "Capabilities": {
+    "title": "What your business can do with AI",
+    "subtitle": "Concrete capabilities that eliminate manual work and generate measurable results.",
+    "items": {
+      "documents": {
+        "task": "Document reading",
+        "description": "Invoices, contracts, and reports processed with no data-entry operator",
+        "impact": "500+ documents/month with zero manual intervention"
+      },
+      "meetings": {
+        "task": "Meeting transcription",
+        "description": "90-minute meetings converted into actionable minutes",
+        "impact": "From 90 min to actionable summary in 3 min"
+      },
+      "monitoring": {
+        "task": "Competitor monitoring",
+        "description": "Prices, content, and market moves tracked automatically",
+        "impact": "Continuous updates without manual scraping"
+      },
+      "content": {
+        "task": "Visual content generation",
+        "description": "Brand assets, mockups, and marketing materials generated with AI",
+        "impact": "From brief to deliverable in minutes"
+      },
+      "research": {
+        "task": "Market research",
+        "description": "Competitive analysis, trends, and opportunities with real-time data",
+        "impact": "Informed decisions without weeks of research"
+      },
+      "web": {
+        "task": "Web automation",
+        "description": "Repetitive tasks on web platforms executed without human intervention",
+        "impact": "Manual processes eliminated entirely"
+      }
+    }
+  },
+  "WhyUs": {
+    "title": "Why Skywalking",
+    "subtitle": "Technology that empowers people, not replaces them. Measurable results, proven architecture.",
+    "reasons": {
+      "speed": {
+        "title": "Speed over perfection",
+        "description": "Incremental implementations with measurable ROI in weeks, not months. Less code, more value."
+      },
+      "simple": {
+        "title": "Simple solutions, real results",
+        "description": "We use what already works. Proven tools, no unnecessary complexity. Less code, fewer problems."
+      },
+      "people": {
+        "title": "Technology empowers people",
+        "description": "Software written with AI, designed and tested by humans. We expand the capabilities of your team."
+      }
+    }
+  },
+  "ProjectsPreview": {
+    "label": "Under construction",
+    "title": "What we're building",
+    "statusActive": "Active",
+    "statusDev": "In development",
+    "projects": {
+      "eterhabitats": {
+        "hint": "Building where others can't reach.",
+        "description": "Sustainable construction in Patagonia. Recycled containers, sheep wool insulation, local materials. Interactive budgets and technical drawings."
+      },
+      "kronos": {
+        "hint": "Every gram counts.",
+        "description": "Industrial weighing monitoring system. Device health, alerts, remote diagnostics. Multiple sites in one system."
+      },
+      "igni": {
+        "hint": "When the forest speaks, you listen.",
+        "description": "Early wildfire alert system. Real-time monitoring to protect Patagonia."
+      },
+      "micelio": {
+        "hint": "The network as a platform.",
+        "description": "SaaS for business management with integrated artificial intelligence. Everything you need, in one place."
+      },
+      "austral": {
+        "hint": "Build better.",
+        "description": "Platform for the construction and materials industry. Quotes, stock, suppliers."
+      }
+    }
+  },
+  "Testimonials": {
+    "title": "What our clients say",
+    "subtitle": "Real results from companies already automating with AI",
+    "ctaQuestion": "Want results like these for your company?",
+    "ctaButton": "Let's talk about your project",
+    "items": {
+      "maria": {
+        "quote": "Skywalking completely transformed our operation. What used to take 40 hours a week now happens automatically.",
+        "result": "40h saved/week",
+        "role": "CEO",
+        "at": "at"
+      },
+      "carlos": {
+        "quote": "AI automation let us scale without hiring more staff. ROI in 3 months.",
+        "result": "3x operational capacity",
+        "role": "CTO",
+        "at": "at"
+      },
+      "ana": {
+        "quote": "They implemented a system that runs 24/7. Our clients receive instant responses even outside business hours.",
+        "result": "95% client satisfaction",
+        "role": "Sales Manager",
+        "at": "at"
+      }
+    }
+  },
+  "Results": {
+    "title": "Portfolio proven in production",
+    "subtitle": "Real solutions running today across companies in multiple sectors.",
+    "metrics": {
+      "projects": "Active projects in production",
+      "prd": "Full PRD coverage",
+      "verticals": "Industry verticals (Health, Food, Automation, FinTech)",
+      "ops": "Continuous automated operation"
+    }
+  },
+  "ContactForm": {
+    "title": "Let's talk about your project",
+    "subtitle": "Tell us how we can help transform your business with AI",
+    "nameLabel": "Full name",
+    "namePlaceholder": "John Smith",
+    "emailLabel": "Email",
+    "emailPlaceholder": "john@company.com",
+    "whatsappLabel": "WhatsApp (with country code)",
+    "whatsappPlaceholder": "+1 555 1234 5678",
+    "messageLabel": "Tell us more about your challenge",
+    "messagePlaceholder": "Briefly describe the process you want to automate and your main pain point today...",
+    "submit": "Schedule a Free Consultation",
+    "submitting": "Sending...",
+    "successMessage": "Message sent. We'll be in touch soon.",
+    "errorMessage": "Something went wrong. Please try again."
+  },
+  "Footer": {
+    "tagline": "Software written with AI, designed and tested by humans.",
+    "officesTitle": "Offices",
+    "office1": "San Martín de los Andes, Argentina",
+    "office2": "Cali, Colombia",
+    "contactTitle": "Contact",
+    "emailAriaLabel": "Email",
+    "whatsappAriaLabel": "WhatsApp",
+    "rights": "All rights reserved.",
+    "slogan": "Paths built with ❤️ for companies that think big."
+  },
+  "WhatsAppButton": {
+    "message": "Hi! I have a project I'd like to discuss with you",
+    "ariaLabel": "Contact via WhatsApp",
+    "tooltip": "Chat with us"
+  },
+  "FAQPage": {
+    "backLink": "Back to home",
+    "title": "Frequently Asked Questions about AI Automation",
+    "subtitlePart1": "Everything you need to know about business automation, our process, pricing and technology.",
+    "subtitleQuestionsCount": "{count} questions answered",
+    "subtitlePart2": "with radical transparency.",
+    "metaTitle": "FAQ - AI Automation | Skywalking.dev",
+    "metaDescription": "Frequently asked questions about AI-driven business automation. Learn about our process, pricing, ROI, technology (n8n, Claude, GPT-4) and how we work with companies in LATAM."
+  },
+  "FAQFilters": {
+    "allLabel": "All"
+  },
+  "FAQSearch": {
+    "placeholder": "Search questions...",
+    "ariaLabel": "Search frequently asked questions",
+    "clearAriaLabel": "Clear search"
+  },
+  "FAQCTA": {
+    "title": "Didn't find what you were looking for?",
+    "subtitle": "Let's talk. Our team is ready to answer your specific questions and design a tailored solution.",
+    "scheduleButton": "Schedule a Meeting",
+    "whatsappButton": "Write on WhatsApp",
+    "whatsappAriaLabel": "Write on WhatsApp (opens in new window)"
+  },
+  "Blog": {
+    "title": "Blog",
+    "subtitle": "Reflections from inside the system.",
+    "backLink": "Back to home",
+    "backToBlog": "Back to blog",
+    "readingTime": "{time} read",
+    "noPostsFound": "No posts available.",
+    "by": "by",
+    "writtenBy": "Written by"
+  },
+  "Navigation": {
+    "home": "Home",
+    "faq": "FAQ",
+    "blog": "Blog",
+    "hive": "Hive",
+    "skipToContent": "Skip to main content"
+  }
+}

@@ -4,9 +4,11 @@ import { useEffect, useState } from 'react'
 import Image from 'next/image'
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
+import { useTranslations } from "next-intl"
 
 export function Hero() {
   const [mounted, setMounted] = useState(false)
+  const t = useTranslations("Hero")
 
   useEffect(() => {
     setMounted(true)
@@ -14,19 +16,17 @@ export function Hero() {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-4">
-      {/* Hero Background Image — optimized with next/image */}
+      {/* Hero Background Image */}
       <div className="absolute top-0 left-0 right-0 bottom-0 z-0 overflow-hidden">
         <Image
           src="/hero-background-building.webp"
-          alt="Skywalking.dev - Automatización empresarial con IA en Argentina y LATAM"
+          alt={t("imageAlt")}
           fill
           priority
           sizes="100vw"
           className="object-cover object-[center_30%] hidden md:block"
         />
-        {/* Mobile: gradient fallback for performance */}
         <div className="absolute inset-0 bg-gradient-to-b from-[#0A0E27] to-[#1a1f3a] md:hidden" />
-        {/* Overlay for text legibility */}
         <div className="absolute inset-0 bg-black/40" />
       </div>
 
@@ -36,28 +36,26 @@ export function Hero() {
           style={{ transitionDelay: '200ms' }}
           data-testid="hero-badge"
         >
-          <span className="text-[#EFEEE9] text-sm font-medium">Skywalking.dev</span>
+          <span className="text-[#EFEEE9] text-sm font-medium">{t("badge")}</span>
         </div>
 
-        {/* H1 with target keyword — always server-rendered in DOM */}
         <h1
           className={`text-5xl md:text-7xl font-bold text-white leading-tight text-balance transition-all duration-1000 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-7'}`}
           style={{ transitionDelay: '400ms' }}
           data-testid="hero-heading"
         >
-          Automatización con IA para empresas{' '}
+          {t("heading")}{' '}
           <span className="bg-gradient-to-r from-[var(--sky-gold)] to-[var(--sky-orange)] bg-clip-text text-transparent">
-            que quieren escalar
+            {t("headingHighlight")}
           </span>
         </h1>
 
-        {/* H2 tagline — secondary visual element */}
         <p
           className={`text-xl md:text-2xl text-white/90 max-w-3xl mx-auto text-pretty leading-relaxed transition-all duration-800 ${mounted ? 'opacity-100' : 'opacity-0'}`}
           style={{ transitionDelay: '600ms' }}
           data-testid="hero-subtitle"
         >
-          Construimos sistemas inteligentes que eliminan tareas manuales, conectan tus herramientas y liberan a tu equipo para lo que importa.
+          {t("subtitle")}
         </p>
 
         <div
@@ -75,8 +73,8 @@ export function Hero() {
             }}
             data-testid="hero-cta-button"
           >
-            Contactanos
-            <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+            {t("cta")}
+            <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" aria-hidden="true" />
           </Button>
         </div>
       </div>
