@@ -79,6 +79,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         en: "https://skywalking.dev/en",
         "x-default": "https://skywalking.dev/es",
       },
+      types: {
+        "application/rss+xml": "https://skywalking.dev/feed.xml",
+      },
     },
     icons: {
       icon: [
