@@ -1,7 +1,7 @@
 ---
 titulo: Propuesta Acopia+ Plataforma Completa — Llave en Mano
 cliente: La Fabrica Creativa
-fecha: 2026-04-20
+fecha: "2026-04-20"
 total: USD 15,000
 contacto: Gonzalo Parra · +54 11 2162 5416 · gparrar@skywalking.dev
 ---
