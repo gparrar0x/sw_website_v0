@@ -2,7 +2,7 @@
 titulo: Propuesta Acopia+ Plataforma Completa — Llave en Mano
 cliente: La Fabrica Creativa
 fecha: "2026-04-20"
-total: USD 15,000
+total: USD 12,000
 contacto: Gonzalo Parra · +54 11 2162 5416 · gparrar@skywalking.dev
 ---
 
@@ -67,9 +67,9 @@ contacto: Gonzalo Parra · +54 11 2162 5416 · gparrar@skywalking.dev
 
 ---
 
-## Implementación (2 meses)
+## Implementación (10 semanas)
 
-### Fase 1 — M1 + M3: Comercios y Retiros (Semanas 1-3)
+### Fase 1 — M1 + M3: Comercios y Retiros (Semanas 1-4)
 
 Completa **Módulo 1 (Gestión de Comercios)** y **Módulo 3 (Control de Retiros)**.
 
@@ -79,7 +79,7 @@ Completa **Módulo 1 (Gestión de Comercios)** y **Módulo 3 (Control de Retiros
 - Autorización de terceros para retiro
 - Código de retiro y validación desde la app
 
-### Fase 2 — M4 + M6: Precios y Analítica (Semanas 4-6)
+### Fase 2 — M4 + M6: Precios y Analítica (Semanas 5-7)
 
 Completa **Módulo 4 (Evolución de Precios)** y **Módulo 6 (Analítica para el Comercio)**.
 
@@ -89,7 +89,7 @@ Completa **Módulo 4 (Evolución de Precios)** y **Módulo 6 (Analítica para el
 - Dashboard analítico completo
 - Planificación de stock y gestión de compras
 
-### Fase 3 — M5 + M2: Billetera y Cierre (Semanas 7-8)
+### Fase 3 — M5 + M2: Billetera y Cierre (Semanas 8-10)
 
 Completa **Módulo 5 (Billetera de Materiales)** y cierra pendientes de **Módulo 2 (Gestión de Acopios)**.
 
@@ -105,7 +105,7 @@ Completa **Módulo 5 (Billetera de Materiales)** y cierra pendientes de **Módul
 
 ### Desarrollo Llave en Mano
 
-**USD 15,000**
+**USD 12,000**
 
 Incluye:
 
@@ -126,9 +126,15 @@ No incluye:
 
 ## Forma de Pago
 
-- **50%** al aprobar presupuesto (USD 7,500)
-- **25%** al entregar Fase 2 (USD 3,750)
-- **25%** al completar Fase 3 (USD 3,750)
+- **50%** al aprobar presupuesto (USD 6,000)
+- **25%** al entregar Fase 2 (USD 3,000)
+- **25%** al completar Fase 3 (USD 3,000)
+
+---
+
+## Soporte Mensual
+
+**TBD** — a definir segun alcance y necesidades operativas post-entrega.
 
 ---
 
