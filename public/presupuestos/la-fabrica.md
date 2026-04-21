@@ -103,8 +103,6 @@ Completa **Módulo 5 (Billetera de Materiales)** y cierra pendientes de **Módul
 
 ## Inversión
 
-### Desarrollo Llave en Mano
-
 **USD 12,000**
 
 Incluye:
